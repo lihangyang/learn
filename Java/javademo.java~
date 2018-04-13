@@ -1,6 +1,0 @@
-public class javademo{
-
-    public staic void main(String[]args){
-	System.out.println("mobai521!");
-    }
-}
