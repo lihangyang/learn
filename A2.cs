@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class A1 : MonoBehaviour
+public class A2 : MonoBehaviour
 {
 
     private Transform s;
@@ -16,22 +16,22 @@ public class A1 : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.I))
         {
-            s.Translate(Vector3.forward * 0.3f, Space.World);
+            s.Translate(Vector3.forward * 3f, Space.World);
 
         }
         if (Input.GetKey(KeyCode.K))
         {
-            s.Translate(Vector3.back * 0.3f, Space.World);
+            s.Translate(Vector3.back * 3f, Space.World);
 
         }
         if (Input.GetKey(KeyCode.J))
         {
-            s.Translate(Vector3.left * 0.3f, Space.World);
+            s.Translate(Vector3.left * 3f, Space.World);
 
         }
         if (Input.GetKey(KeyCode.L))
         {
-            s.Translate(Vector3.right * 0.3f, Space.World);
+            s.Translate(Vector3.right * 3f, Space.World);
 
         }
 
