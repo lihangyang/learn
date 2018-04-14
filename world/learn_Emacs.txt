@@ -1,0 +1,30 @@
+
+
+emacs自带显示行号功能，在~/.emacs中加入下面两行就可显示行号：
+
+(global-linum-mode 1) ; always show line numbers                              
+(setq linum-format "%d| ")  ;set format
+
+;;删除一行
+C-k
+;;召回
+C-y
+;;emacs路径
+/usr/share/emacs/24.5/
+;;配置颜色
+首先安装emacs的辅助插件：
+sudo apt-get install emacs-goodies-el
+
+然后进入Emacs:
+
+Emacs 最新版本已经自带各种主题，只要敲入命令：????color-theme-select 就会看到一大堆主题，选择一个Emacs就会切换过去。，
+当选中了自己喜欢的，记住名称，然后像我这样填入~/.emacs文件中。以后就自动加载了。
+ 
+默认推荐一个主题，添加到~/.emacs文件中
+
+[html] view plain copy
+
+ 
+(require 'color-theme)  
+(color-theme-initialize)  
+(color-theme-arjen)  
