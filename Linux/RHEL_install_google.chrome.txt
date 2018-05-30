@@ -1,0 +1,41 @@
+RedHat&CentOS 6.4安装谷歌浏览器chrome
+
+
+
+    谷歌的浏览器已经不支持RedHat&CentOS 6.4平台了，如果手动编译安装，不仅要寻找安装很多的依赖库，而且很难找很麻烦，于是网上一顿狂搜，搜了几天，终于觅得一简单又快速的办法，虽然东西是网上的，但这个方法经过了我的改进，而且经本人实机实测，可行！
+
+
+
+    废话不多说，先下载自动安装脚本：http://chrome.richardlloyd.org.uk/install_chrome.sh
+
+
+
+    然后使用gedit编辑install—chrome.sh，使用find功能查找并将
+
+
+
+    其中的http://omahaproxy.appspot.com改为https://dl.google.com/linux/direct
+
+    /google-chrome-stable_current_x86_64.rpm。
+
+
+
+    打开终端，依次执行
+
+
+
+    chmod u+x install_chrome.sh
+
+
+
+    ./install_chrome.sh
+
+
+
+    也可将这两行命令直接复制到终端下自动执行。
+
+
+
+    它会自动下载并安装最新版谷歌浏览器及相关依赖包。在终端下执行google-chrome就可以打开浏览器了。（注：须在非root用户下执行，若是在root登陆情况下指定其他用户执行带图形的google-chrome，要执行“xhost 用户名”命令，授予该用户访问权限，这是因为Xserver默认情况下不允许别的用户的图形程序的图形显示在当前屏幕上。）
+
+

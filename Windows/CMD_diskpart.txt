@@ -1,7 +1,0 @@
-首先装个最小winPE
-然后进入cmd
-select disk 0
-clean
-list volume 列出卷
-list partition 列出分区
-assign 自动分配D盘

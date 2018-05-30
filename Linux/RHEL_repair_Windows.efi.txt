@@ -1,0 +1,13 @@
+### BEGIN /etc/grub.d/40_custom ###
+menuentry "Windows 10" {
+
+insmod part_msdos
+
+insmod ntfs
+
+set root='(hd0,msdos1)'
+
+chainloader +1
+
+}
+### END /etc/grub.d/40_custom ###
