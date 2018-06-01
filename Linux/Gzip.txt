@@ -1,0 +1,3084 @@
+GZIP(1)                              General Commands Manual                              GZIP(1)
+
+[1mGZIP（1）通用命令手册GZIP（1）[22m
+[1m(GZIP(1) tōngyòng mìnglìng shǒucè GZIP(1))[22m
+
+Translations of [4mGZIP(1)                              General Commands Manual                              GZIP(1)[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mGZIP(1)                              General Commands Manual                              GZIP(1)[24m
+    [1mGZIP（1）通用命令手册GZIP（1）[22m, [1mGZIP（1）一般命令手册GZIP（1）[22m
+
+NAME
+/nām/
+
+[1m名称[22m
+[1m(Míngchēng)[22m
+
+Definitions of [4mNAME[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+noun
+[1m    名称[22m
+        name, denomination, appellation, heading
+[1m    名[22m
+        name, reputation
+[1m    名字[22m
+        name, first name
+[1m    名义[22m
+        name
+[1m    姓[22m
+        name, surname, last name, family name
+[1m    称号[22m
+        title, name, designation
+[1m    号[22m
+        number, mark, name, horn, howl, roar
+
+verb
+[1m    命名[22m
+        name, give name, style
+[1m    称[22m
+        say, call, name, weigh, praise, state
+[1m    指名[22m
+        name, give name
+[1m    定名[22m
+        name, denominate, give name
+[1m    指派[22m
+        designate, appoint, name
+[1m    谥[22m
+        call, name
+[1m    谓[22m
+        call, say, speak, name, tell
+[1m    曰[22m
+        say, call, speak, name
+[1m    称说[22m
+        name, say the name of
+[1m    起名儿[22m
+        name, give name
+
+[4mNAME[24m
+    [1m名称[22m, [1m命名[22m, [1m名[22m, [1m名字[22m, [1mNAME[22m
+
+gzip, gunzip, zcat - compress or expand files
+
+[1mgzip，gunzip，zcat  - 压缩或扩展文件[22m
+[1m(Gzip,gunzip,zcat  - yāsuō huò kuòzhǎn wénjiàn)[22m
+
+Translations of [4mgzip, gunzip, zcat - compress or expand files[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mgzip, gunzip, zcat - compress or expand files[24m
+    [1mgzip，gunzip，zcat  - 压缩或扩展文件[22m, [1m的gzip，gunzip解，用zcat  - 压缩或扩展文件[22m
+
+SYNOPSIS
+/səˈnäpsis/
+
+[1m概要[22m
+[1m(Gàiyào)[22m
+
+Definitions of [4mSYNOPSIS[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+noun
+[1m    概要[22m
+        summary, outline, schematic, synopsis, compendium, schema
+[1m    简介[22m
+        brief introduction, synopsis, summary
+[1m    提要[22m
+        summary, synopsis, abstract, epitome
+[1m    梗概[22m
+        synopsis, gist, broad outline, main idea
+[1m    撮要[22m
+        abstract, synopsis, extract
+[1m    说明书[22m
+        synopsis
+
+[4mSYNOPSIS[24m
+    [1m概要[22m, [1m简介[22m, [1m提要[22m
+
+gzip [ -acdfhklLnNrtvV19 ] [--rsyncable] [-S suffix] [ name ...  ]
+
+[1mgzip [-acdfhklLnNrtvV19] [--rsyncable] [-S后缀] [名称...][22m
+[1m(Gzip [-acdfhklLnNrtvV19] [--rsyncable] [-S hòuzhuì] [míngchēng...])[22m
+
+Translations of [4mgzip [ -acdfhklLnNrtvV19 ] [--rsyncable] [-S suffix] [ name ...  ][24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mgzip [ -acdfhklLnNrtvV19 ] [--rsyncable] [-S suffix] [ name ...  ][24m
+    [1mgzip [-acdfhklLnNrtvV19] [--rsyncable] [-S后缀] [名称...][22m, [1mgzip的[-acdfhklLnNrtvV19] [--rsyncable] [-S后缀] [名称...][22m
+
+gunzip [ -acfhklLnNrtvV ] [-S suffix] [ name ...  ]
+
+[1mgunzip [-acfhklLnNrtvV] [-S后缀] [名称...][22m
+[1m(Gunzip [-acfhklLnNrtvV] [-S hòuzhuì] [míngchēng...])[22m
+
+Translations of [4mgunzip [ -acfhklLnNrtvV ] [-S suffix] [ name ...  ][24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mgunzip [ -acfhklLnNrtvV ] [-S suffix] [ name ...  ][24m
+    [1mgunzip [-acfhklLnNrtvV] [-S后缀] [名称...][22m, [1mgunzip解[-acfhklLnNrtvV] [-S后缀] [名称...][22m
+
+zcat [ -fhLV ] [ name ...  ]
+
+[1mzcat [-fhLV] [名字...][22m
+[1m(Zcat [-fhLV] [míngzì...])[22m
+
+Translations of [4mzcat [ -fhLV ] [ name ...  ][24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mzcat [ -fhLV ] [ name ...  ][24m
+    [1mzcat [-fhLV] [名字...][22m, [1m用zcat [-fhLV] [名称...][22m
+
+DESCRIPTION
+/diˈskripSHən/
+
+[1m描述[22m
+[1m(Miáoshù)[22m
+
+Definitions of [4mDESCRIPTION[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+noun
+[1m    描述[22m
+        description, characterization
+[1m    描写[22m
+        description, depiction, rendition
+[1m    色[22m
+        color, look, tint, appearance, scene, description
+
+[4mDESCRIPTION[24m
+    [1m描述[22m, [1m说明[22m
+
+Gzip  reduces the size of the named files using Lempel-Ziv coding (LZ77). Whenever possi‐
+
+[1mGzip使用Lempel-Ziv编码（LZ77）缩小了指定文件的大小。每当possi-[22m
+[1m(Gzip shǐyòng Lempel-Ziv biānmǎ (LZ77) suōxiǎole zhǐdìng wénjiàn de dàxiǎo. Měi dāng possi-)[22m
+
+Translations of [4mGzip  reduces the size of the named files using Lempel-Ziv coding (LZ77). Whenever possi‐[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mGzip  reduces the size of the named files using Lempel-Ziv coding (LZ77).[24m
+    [1mGzip使用Lempel-Ziv编码（LZ77）缩小了指定文件的大小。[22m, [1mGzip采用的Lempel-Ziv编码（LZ77）命名的文件的大小。[22m
+[4mWhenever possi‐[24m
+    [1m每当possi-[22m
+
+ble, each file is replaced by one with the extension .gz, while keeping the same ownership
+
+[1m每个文件都被扩展名为.gz的文件替换，同时保持相同的所有权[22m
+[1m(Měi gè wénjiàn dōu bèi kuòzhǎn míng wèi.Gz de wénjiàn tìhuàn, tóngshí bǎochí xiāngtóng de suǒyǒuquán)[22m
+
+Translations of [4mble, each file is replaced by one with the extension .gz, while keeping the same ownership[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mble, each file is replaced by one with the extension .gz, while keeping the same ownership[24m
+    [1m每个文件都被扩展名为.gz的文件替换，同时保持相同的所有权[22m, [1mBLE，每个文件由一个扩展名为.gz更换，同时保持相同的所有权[22m
+
+modes, access and modification times. (The default extension is -gz for VMS, z for MSDOS,
+
+[1m模式，访问和修改时间。 （默认扩展名为VMS的-gz，MSDOS的z，[22m
+[1m(Móshì, fǎngwèn hé xiūgǎi shíjiān. (Mòrèn kuòzhǎn míng wèi VMS de-gz,MSDOS de z,)[22m
+
+Translations of [4mmodes, access and modification times. (The default extension is -gz for VMS, z for MSDOS,[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mmodes, access and modification times.[24m
+    [1m模式，访问和修改时间。[22m
+[4m(The default extension is -gz for VMS, z for MSDOS,[24m
+    [1m（默认扩展名为VMS的-gz，MSDOS的z，[22m, [1m（默认扩展-gz用于VMS，Z为MSDOS，[22m
+
+OS/2 FAT, Windows NT FAT and Atari.)  If no files are specified, or if a file name is "-",
+
+[1mOS / 2 FAT，Windows NT FAT和Atari）。如果没有指定文件，或者文件名是“ - ”[22m
+[1m(OS/ 2 FAT,Windows NT FAT hé Atari). Rúguǒ méiyǒu zhǐdìng wénjiàn, huòzhě wénjiàn míng shì “ - ”)[22m
+
+Translations of [4mOS/2 FAT, Windows NT FAT and Atari.)  If no files are specified, or if a file name is "-",[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mOS/2 FAT, Windows NT FAT and Atari.)  If no files are specified, or if a file name is "-",[24m
+    [1mOS / 2 FAT，Windows NT FAT和Atari）。如果没有指定文件，或者文件名是“ - ”[22m, [1mOS / 2 FAT，Windows NT的FAT和雅达利）如果没有文件规定，或者如果文件名是“ - ”，[22m
+
+the  standard  input is compressed to the standard output. Gzip will only attempt to com‐
+
+[1m标准输入被压缩到标准输出。 Gzip只会尝试com-[22m
+[1m(Biāozhǔn shūrù bèi yāsuō dào biāozhǔn shūchū. Gzip zhǐ huì chángshì com-)[22m
+
+Translations of [4mthe  standard  input is compressed to the standard output. Gzip will only attempt to com‐[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mthe  standard  input is compressed to the standard output.[24m
+    [1m标准输入被压缩到标准输出。[22m
+[4mGzip will only attempt to com‐[24m
+    [1mGzip只会尝试com-[22m, [1mGzip已只会尝试的COM[22m
+
+press regular files. In particular, it will ignore symbolic links.
+
+[1m按常规文件。特别是，它会忽略符号链接。[22m
+[1m(Àn chángguī wénjiàn. Tèbié shì, tā huì hūlüè fúhào liànjiē.)[22m
+
+Translations of [4mpress regular files. In particular, it will ignore symbolic links.[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mpress regular files.[24m
+    [1m按常规文件。[22m
+[4mIn particular, it will ignore symbolic links.[24m
+    [1m特别是，它会忽略符号链接。[22m
+
+If the compressed file name is too long for its file  system,  gzip  truncates  it. Gzip
+
+[1m如果文件系统的压缩文件名太长，gzip会截断它。 Gzip已[22m
+[1m(Rúguǒ wénjiàn xìtǒng de yāsuō wénjiàn míng tài zhǎng,gzip huì jiéduàn tā. Gzip yǐ)[22m
+
+Translations of [4mIf the compressed file name is too long for its file  system,  gzip  truncates  it. Gzip[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mIf the compressed file name is too long for its file  system,  gzip  truncates  it.[24m
+    [1m如果文件系统的压缩文件名太长，gzip会截断它。[22m, [1m如果压缩文件名称是其文件系统太长，gzip的截断它。[22m
+[4mGzip[24m
+    [1mGzip已[22m, [1mgzip的[22m, [1m的gzip[22m
+
+attempts to truncate only the parts of the file name longer than 3 characters. (A part is
+
+[1m试图只截取长度超过3个字符的部分文件名。 （一部分是[22m
+[1m(Shìtú zhǐ jiéqǔ chángdù chāoguò 3 gè zìfú de bùfèn wénjiàn míng. (Yībùfèn shì)[22m
+
+Translations of [4mattempts to truncate only the parts of the file name longer than 3 characters. (A part is[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mattempts to truncate only the parts of the file name longer than 3 characters.[24m
+    [1m试图只截取长度超过3个字符的部分文件名。[22m, [1m只尝试截断文件名的部分长于3个字符。[22m
+[4m(A part is[24m
+    [1m（一部分是[22m, [1m（A部分是[22m
+
+delimited by dots.) If the name consists of small parts only, the longest parts are  trun‐
+
+[1m如果名称仅由小部分组成，则最长的部分是trun-[22m
+[1m(Rúguǒ míngchēng jǐn yóu xiǎo bùfèn zǔchéng, zé zuì zhǎng de bùfèn shì trun-)[22m
+
+Translations of [4mdelimited by dots.) If the name consists of small parts only, the longest parts are  trun‐[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mdelimited by dots.) If the name consists of small parts only, the longest parts are  trun‐[24m
+    [1m如果名称仅由小部分组成，则最长的部分是trun-[22m, [1m用点分隔）。如果名称只包含一小部分，最长的部分是trun-[22m
+
+cated. For  example,  if  file names are limited to 14 characters, gzip.msdos.exe is com‐
+
+[1mcated。例如，如果文件名限制为14个字符，则gzip.msdos.exe是com-[22m
+[1m(Cated. Lìrú, rúguǒ wénjiàn míng xiànzhì wèi 14 gè zìfú, zé gzip.Msdos.Exe shì com-)[22m
+
+Translations of [4mcated. For  example,  if  file names are limited to 14 characters, gzip.msdos.exe is com‐[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mcated[24m
+    [1mcated[22m
+[4m.[24m
+    [1m。[22m
+[4mFor  example,  if  file names are limited to 14 characters, gzip.msdos.exe is com‐[24m
+    [1m例如，如果文件名限制为14个字符，则gzip.msdos.exe是com-[22m, [1m例如，如果文件名被限制为14个字符，gzip.msdos.exe是COM的[22m
+
+pressed to gzi.msd.exe.gz. Names are not truncated on systems which do not have  a  limit
+
+[1m按gzi.msd.exe.gz.在没有限制的系统上，名称不会被截断[22m
+[1m(Àn gzi.Msd.Exe.Gz. Zài méiyǒu xiànzhì de xìtǒng shàng, míngchēng bù huì bèi jiéduàn)[22m
+
+Translations of [4mpressed to gzi.msd.exe.gz. Names are not truncated on systems which do not have  a  limit[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mpressed to gzi.msd.exe.gz.[24m
+    [1m按gzi.msd.exe.gz.[22m, [1m按下gzi.msd.exe.gz.[22m
+[4mNames are not truncated on systems which do not have  a  limit[24m
+    [1m在没有限制的系统上，名称不会被截断[22m, [1m名字不会被截断上没有限制系统[22m
+
+on file name length.
+
+[1m在文件名长度上。[22m
+[1m(Zài wénjiàn míng chángdù shàng.)[22m
+
+Translations of [4mon file name length.[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mon file name length.[24m
+    [1m在文件名长度上。[22m, [1m在文件名长度。[22m
+
+By  default, gzip keeps the original file name and timestamp in the compressed file. These
+
+[1m默认情况下，gzip保留压缩文件中的原始文件名和时间戳。这些[22m
+[1m(Mòrèn qíngkuàng xià,gzip bǎoliú yāsuō wénjiàn zhōng de yuánshǐ wénjiàn mínghé shíjiān chuō. Zhèxiē)[22m
+
+Translations of [4mBy  default, gzip keeps the original file name and timestamp in the compressed file. These[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mBy  default, gzip keeps the original file name and timestamp in the compressed file.[24m
+    [1m默认情况下，gzip保留压缩文件中的原始文件名和时间戳。[22m, [1m默认情况下，gzip的保持压缩文件中的原始文件名和时间戳。[22m
+[4mThese[24m
+    [1m这些[22m
+
+are used when decompressing the file with the -N option. This  is  useful  when  the  com‐
+
+[1m在使用-N选项解压文件时使用。这在com-[22m
+[1m(Zài shǐyòng-N xuǎnxiàng jiěyā wénjiàn shí shǐyòng. Zhè zài com-)[22m
+
+Translations of [4mare used when decompressing the file with the -N option. This  is  useful  when  the  com‐[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mare used when decompressing the file with the -N option.[24m
+    [1m在使用-N选项解压文件时使用。[22m, [1m解压缩与-N选项文件时使用。[22m
+[4mThis  is  useful  when  the  com‐[24m
+    [1m这在com-[22m, [1m这是有用的，当在COM[22m
+
+pressed  file  name  was  truncated  or when the time stamp was not preserved after a file
+
+[1m按下的文件名被截断或者当文件后时间戳未被保留时[22m
+[1m(Àn xià de wénjiàn míng bèi jiéduàn huòzhě dāng wénjiàn hòu shíjiān chuō wèi bèi bǎoliú shí)[22m
+
+Translations of [4mpressed  file  name  was  truncated  or when the time stamp was not preserved after a file[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mpressed  file  name  was  truncated  or when the time stamp was not preserved after a file[24m
+    [1m按下的文件名被截断或者当文件后时间戳未被保留时[22m, [1m按下文件名被截断或者当文件后不保留时间戳[22m
+
+transfer.
+
+[1m转让。[22m
+[1m(Zhuǎnràng.)[22m
+
+Definitions of [4mtransfer.[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+verb
+[1m    转让[22m
+        transfer
+[1m    传递[22m
+        transfer, deliver, transmit
+[1m    转[22m
+        turn, transfer, shift, convey, circle, revolve
+[1m    调[22m
+        transfer, adjust, move, mix, shift, suit well
+[1m    移交[22m
+        transfer, hand over, turn over
+[1m    转送[22m
+        transfer
+[1m    调动[22m
+        transfer, maneuver, muster, shift, move troops, manoeuvre
+[1m    过户[22m
+        transfer
+[1m    划拨[22m
+        transfer, appropriate, assign, allot
+[1m    搬迁[22m
+        move, remove, transfer
+[1m    挪[22m
+        move, shift, transfer
+[1m    交待[22m
+        explain, account for, confess, tell, justify, transfer
+
+noun
+[1m    移动[22m
+        movement, transfer, stir
+[1m    转车[22m
+        transfer
+[1m    换车[22m
+        transfer, tranship
+[1m    搬动[22m
+        transfer
+
+[4mtransfer.[24m
+    [1m转让。[22m, [1m传递。[22m
+
+Compressed files can be restored to their original form using gzip -d or gunzip  or  zcat.
+
+[1m使用gzip -d或gunzip或zcat可将压缩文件恢复到其原始格式。[22m
+[1m(Shǐyòng gzip -d huò gunzip huò zcat kě jiāng yāsuō wénjiàn huīfù dào qí yuánshǐ géshì.)[22m
+
+Translations of [4mCompressed files can be restored to their original form using gzip -d or gunzip  or  zcat.[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mCompressed files can be restored to their original form using gzip -d or gunzip  or  zcat.[24m
+    [1m使用gzip -d或gunzip或zcat可将压缩文件恢复到其原始格式。[22m, [1m压缩文件可以使用gzip -d或者gunzip ZCAT恢复到原来的形状。[22m
+
+If  the  original name saved in the compressed file is not suitable for its file system, a
+
+[1m如果保存在压缩文件中的原始名称不适合其文件系统，则a[22m
+[1m(Rúguǒ bǎocún zài yāsuō wénjiàn zhōng de yuánshǐ míngchēng bù shìhé qí wénjiàn xìtǒng, zé a)[22m
+
+Translations of [4mIf  the  original name saved in the compressed file is not suitable for its file system, a[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mIf  the  original name saved in the compressed file is not suitable for its file system, a[24m
+    [1m如果保存在压缩文件中的原始名称不适合其文件系统，则a[22m, [1m如果保留在压缩文件中的原始的名字是不适合其文件系统，[22m
+
+new name is constructed from the original one to make it legal.
+
+[1m新名称是从原来的名称构建的，以使其合法。[22m
+[1m(Xīn míngchēng shì cóng yuánlái de míngchēng gòujiàn de, yǐ shǐ qí héfǎ.)[22m
+
+Translations of [4mnew name is constructed from the original one to make it legal.[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mnew name is constructed from the original one to make it legal.[24m
+    [1m新名称是从原来的名称构建的，以使其合法。[22m, [1m新名称从原来的一个，使之法律构建。[22m
+
+gunzip takes a list of files on its command line and replaces each file  whose  name  ends
+
+[1mgunzip在其命令行上获取文件列表，并替换名称结尾的每个文件[22m
+[1m(Gunzip zài qí mìnglìng xíng shàng huòqǔ wénjiàn lièbiǎo, bìng tìhuàn míngchēng jiéwěi de měi gè wénjiàn)[22m
+
+Translations of [4mgunzip takes a list of files on its command line and replaces each file  whose  name  ends[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mgunzip takes a list of files on its command line and replaces each file  whose  name  ends[24m
+    [1mgunzip在其命令行上获取文件列表，并替换名称结尾的每个文件[22m, [1mgunzip解需要命令行上的文件列表，并取代他的名字末端上的每个文件[22m
+
+with  .gz, -gz, .z, -z, or _z (ignoring case) and which begins with the correct magic num‐
+
+[1m与.gz，-gz，.z，-z或_z（忽略大小写）并以正确的magic num-[22m
+[1m(Yǔ.Gz,-gz,.Z,-z huò_z(hūlüè dàxiǎo xiě) bìng yǐ zhèngquè de magic num-)[22m
+
+Translations of [4mwith  .gz, -gz, .z, -z, or _z (ignoring case) and which begins with the correct magic num‐[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mwith  .gz, -gz, .z, -z, or _z (ignoring case) and which begins with the correct magic num‐[24m
+    [1m与.gz，-gz，.z，-z或_z（忽略大小写）并以正确的magic num-[22m, [1m以.gz，-gz，.Z，-z，或_z（忽略大小写），并且开始于正确的数量 - 魔[22m
+
+ber with an uncompressed file without the original extension. gunzip also recognizes  the
+
+[1m没有原始扩展名的未压缩文件。 gunzip也认可了[22m
+[1m(Méiyǒu yuánshǐ kuòzhǎn míng de wèi yāsuō wénjiàn. Gunzip yě rènkěle)[22m
+
+Translations of [4mber with an uncompressed file without the original extension. gunzip also recognizes  the[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mber with an uncompressed file without the original extension.[24m
+    [1m没有原始扩展名的未压缩文件。[22m, [1m有没有原分机未压缩的文件BER。[22m
+[4mgunzip also recognizes  the[24m
+    [1mgunzip也认可了[22m, [1mgunzip也能识别[22m
+
+special  extensions .tgz and .taz as shorthands for .tar.gz and .tar.Z respectively. When
+
+[1m特别扩展名.tgz和.taz分别作为.tar.gz和.tar.Z的简写。什么时候[22m
+[1m(Tèbié kuòzhǎn míng.Tgz hé.Taz fēnbié zuòwéi.Tar.Gz hé.Tar.Z de jiǎnxiě. Shénme shíhòu)[22m
+
+Translations of [4mspecial  extensions .tgz and .taz as shorthands for .tar.gz and .tar.Z respectively. When[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mspecial  extensions .tgz and .taz as shorthands for .tar.gz and .tar.Z respectively.[24m
+    [1m特别扩展名.tgz和.taz分别作为.tar.gz和.tar.Z的简写。[22m, [1m扩展名为.tgz和.taz的速记分别当作.tar.gz和.tar.Z的。[22m
+[4mWhen[24m
+    [1m什么时候[22m, [1m当[22m
+
+compressing, gzip uses the .tgz extension if necessary instead of truncating a file with a
+
+[1m压缩，如果需要，gzip使用.tgz扩展名，而不是用a截断文件[22m
+[1m(Yāsuō, rúguǒ xūyào,gzip shǐyòng.Tgz kuòzhǎn míng, ér bùshì yòng a jiéduàn wénjiàn)[22m
+
+Translations of [4mcompressing, gzip uses the .tgz extension if necessary instead of truncating a file with a[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mcompressing, gzip uses the .tgz extension if necessary instead of truncating a file with a[24m
+    [1m压缩，如果需要，gzip使用.tgz扩展名，而不是用a截断文件[22m, [1m压缩，gzip将采用.tgz的扩展如果有必要，而不是截断文件用[22m
+
+.tar extension.
+
+[1m.tar扩展名。[22m
+[1m(.Tar kuòzhǎn míng.)[22m
+
+Translations of [4m.tar extension.[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4m.tar extension.[24m
+    [1m.tar扩展名。[22m, [1m的.tar扩展。[22m
+
+gunzip can currently decompress files created by gzip, zip, compress, compress -H or pack.
+
+[1mgunzip目前可以解压缩由gzip，zip，compress，compress -H或pack创建的文件。[22m
+[1m(Gunzip mùqián kěyǐ jiě yāsuō yóu gzip,zip,compress,compress -H huò pack chuàngjiàn de wénjiàn.)[22m
+
+Translations of [4mgunzip can currently decompress files created by gzip, zip, compress, compress -H or pack.[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mgunzip can currently decompress files created by gzip, zip, compress, compress -H or pack.[24m
+    [1mgunzip目前可以解压缩由gzip，zip，compress，compress -H或pack创建的文件。[22m, [1m目前gunzip解可以解压缩由gzip的，拉链创建的文件，压缩，压缩-H或包。[22m
+
+The detection of the input format is automatic. When using the first two formats,  gunzip
+
+[1m输入格式的检测是自动的。当使用前两种格式时，gunzip[22m
+[1m(Shūrù géshì de jiǎncè shì zìdòng de. Dāng shǐyòng qián liǎng zhǒng géshì shí,gunzip)[22m
+
+Translations of [4mThe detection of the input format is automatic. When using the first two formats,  gunzip[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mThe detection of the input format is automatic.[24m
+    [1m输入格式的检测是自动的。[22m
+[4mWhen using the first two formats,  gunzip[24m
+    [1m当使用前两种格式时，gunzip[22m, [1m当使用前两种格式，gunzip解[22m
+
+checks a 32 bit CRC. For pack and gunzip checks the uncompressed length. The standard com‐
+
+[1m检查32位CRC。 pack和gunzip检查未压缩的长度。标准的com-[22m
+[1m(Jiǎnchá 32 wèi CRC. Pack hé gunzip jiǎnchá wèi yāsuō de chángdù. Biāozhǔn dì com-)[22m
+
+Translations of [4mchecks a 32 bit CRC. For pack and gunzip checks the uncompressed length. The standard com‐[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mchecks a 32 bit CRC.[24m
+    [1m检查32位CRC。[22m, [1m检查一个32位的CRC。[22m
+[4mFor pack and gunzip checks the uncompressed length.[24m
+    [1mpack和gunzip检查未压缩的长度。[22m, [1m对于包和gunzip则检查未压缩的长度。[22m
+[4mThe standard com‐[24m
+    [1m标准的com-[22m, [1m该标准的COM[22m
+
+press format was not designed to allow consistency checks. However  gunzip  is  sometimes
+
+[1m新闻稿格式的设计不是为了进行一致性检查。不过gunzip有时候是[22m
+[1m(Xīnwén gǎo géshì de shèjì bùshì wèile jìnxíng yīzhì xìng jiǎnchá. Bùguò gunzip yǒu shíhòu shì)[22m
+
+Translations of [4mpress format was not designed to allow consistency checks. However  gunzip  is  sometimes[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mpress format was not designed to allow consistency checks.[24m
+    [1m新闻稿格式的设计不是为了进行一致性检查。[22m, [1m按格式的设计无法实现一致性检查。[22m
+[4mHowever  gunzip  is  sometimes[24m
+    [1m不过gunzip有时候是[22m, [1m但有时gunzip[22m
+
+able  to  detect  a  bad .Z file. If you get an error when uncompressing a .Z file, do not
+
+[1m能够检测到一个坏的.Z文件。如果解压缩.Z文件时出现错误，请不要[22m
+[1m(Nénggòu jiǎncè dào yīgè huài de.Z wénjiàn. Rúguǒ jiě yāsuō.Z wénjiàn shí chūxiàn cuòwù, qǐng bùyào)[22m
+
+Translations of [4mable  to  detect  a  bad .Z file. If you get an error when uncompressing a .Z file, do not[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mable  to  detect  a  bad .Z file.[24m
+    [1m能够检测到一个坏的.Z文件。[22m, [1m能检测到坏的.Z文件。[22m
+[4mIf you get an error when uncompressing a .Z file, do not[24m
+    [1m如果解压缩.Z文件时出现错误，请不要[22m, [1m如果你解压一个.Z文件时出现错误，不[22m
+
+assume that the .Z file is correct simply because the standard uncompress  does  not  com‐
+
+[1m假定.Z文件是正确的，因为标准的解压缩不是com-[22m
+[1m(Jiǎdìng.Z wénjiàn shì zhèngquè de, yīnwèi biāozhǔn dì jiě yāsuō bùshì com-)[22m
+
+Translations of [4massume that the .Z file is correct simply because the standard uncompress  does  not  com‐[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4massume that the .Z file is correct simply because the standard uncompress  does  not  com‐[24m
+    [1m假定.Z文件是正确的，因为标准的解压缩不是com-[22m, [1m认定.Z文件是正确的，只是因为标准的uncompress没有的COM[22m
+
+plain. This  generally  means  that the standard uncompress does not check its input, and
+
+[1m平原。这通常意味着标准解压缩不检查其输入，并且[22m
+[1m(Píngyuán. Zhè tōngcháng yìwèizhe biāozhǔn jiě yāsuō bù jiǎnchá qí shūrù, bìngqiě)[22m
+
+Translations of [4mplain. This  generally  means  that the standard uncompress does not check its input, and[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mplain .[24m
+    [1m平原。[22m, [1m平原[22m
+[4mThis  generally  means  that the standard uncompress does not check its input, and[24m
+    [1m这通常意味着标准解压缩不检查其输入，并且[22m, [1m这通常意味着标准的uncompress没有检查它的输入端，[22m
+
+happily generates garbage output. The SCO compress -H  format  (lzh  compression  method)
+
+[1m愉快地生成垃圾输出。 SCO压缩-H格式（lzh压缩方法）[22m
+[1m(Yúkuài dì shēngchéng lèsè shūchū. SCO yāsuō-H géshì (lzh yāsuō fāngfǎ))[22m
+
+Translations of [4mhappily generates garbage output. The SCO compress -H  format  (lzh  compression  method)[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mhappily generates garbage output.[24m
+    [1m愉快地生成垃圾输出。[22m, [1m愉快地产生垃圾输出。[22m
+[4mThe SCO compress -H  format  (lzh  compression  method)[24m
+    [1mSCO压缩-H格式（lzh压缩方法）[22m, [1m在SCO压缩-H格式（LZH压缩方法）[22m
+
+does not include a CRC but also allows some consistency checks.
+
+[1m不包含CRC，但也允许进行一致性检查。[22m
+[1m(Bù bāohán CRC, dàn yě yǔnxǔ jìnxíng yīzhì xìng jiǎnchá.)[22m
+
+Translations of [4mdoes not include a CRC but also allows some consistency checks.[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mdoes not include a CRC but also allows some consistency checks.[24m
+    [1m不包含CRC，但也允许进行一致性检查。[22m, [1m不包括CRC但也允许一些一致性检查。[22m
+
+Files  created  by  zip can be uncompressed by gzip only if they have a single member com‐
+
+[1m由zip创建的文件只能由gzip解压缩，只有它们具有单个成员com-[22m
+[1m(Yóu zip chuàngjiàn de wénjiàn zhǐ néng yóu gzip jiě yāsuō, zhǐyǒu tāmen jùyǒu dāngè chéngyuán com-)[22m
+
+Translations of [4mFiles  created  by  zip can be uncompressed by gzip only if they have a single member com‐[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mFiles  created  by  zip can be uncompressed by gzip only if they have a single member com‐[24m
+    [1m由zip创建的文件只能由gzip解压缩，只有它们具有单个成员com-[22m, [1m通过压缩创建的文件可以用gzip解压，只有当他们有一个成员的COM[22m
+
+pressed with the 'deflation' method. This feature is only intended to help  conversion  of
+
+[1m按照'通货紧缩'的方法。此功能仅用于帮助转换[22m
+[1m(Ànzhào'tōnghuò jǐnsuō'de fāngfǎ. Cǐ gōngnéng jǐn yòng yú bāngzhù zhuǎnhuàn)[22m
+
+Translations of [4mpressed with the 'deflation' method. This feature is only intended to help  conversion  of[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mpressed with the 'deflation' method.[24m
+    [1m按照'通货紧缩'的方法。[22m, [1m按压与“放气”的方法。[22m
+[4mThis feature is only intended to help  conversion  of[24m
+    [1m此功能仅用于帮助转换[22m, [1m此功能仅用于帮助的转换[22m
+
+tar.zip  files  to  the  tar.gz format. To extract a zip file with a single member, use a
+
+[1mtar.zip文件转换为tar.gz格式。要使用单个成员提取zip文件，请使用[22m
+[1m(Tar.Zip wénjiàn zhuǎnhuàn wèi tar.Gz géshì. Yào shǐyòng dāngè chéngyuán tíqǔ zip wénjiàn, qǐng shǐyòng)[22m
+
+Translations of [4mtar.zip  files  to  the  tar.gz format. To extract a zip file with a single member, use a[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mtar.zip  files  to  the  tar.gz format.[24m
+    [1mtar.zip文件转换为tar.gz格式。[22m, [1mtar.zip文件到的tar.gz格式。[22m
+[4mTo extract a zip file with a single member, use a[24m
+    [1m要使用单个成员提取zip文件，请使用[22m, [1m为了提取与单个成员一个zip文件，使用[22m
+
+command like gunzip <foo.zip or gunzip -S .zip foo.zip. To extract zip files with several
+
+[1m命令如gunzip <foo.zip或gunzip -S .zip foo.zip。用几个提取zip文件[22m
+[1m(Mìnglìng rú gunzip <foo.Zip huò gunzip -S.Zip foo.Zip. Yòng jǐ gè tíqǔ zip wénjiàn)[22m
+
+Translations of [4mcommand like gunzip <foo.zip or gunzip -S .zip foo.zip. To extract zip files with several[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mcommand like gunzip <foo.zip or gunzip -S .zip foo.zip.[24m
+    [1m命令如gunzip <foo.zip或gunzip -S .zip foo.zip。[22m, [1m命令等gunzip解<foo.zip或gunzip解-S的.zip foo.zip。[22m
+[4mTo extract zip files with several[24m
+    [1m用几个提取zip文件[22m, [1m为了提取与几个zip文件[22m
+
+members, use unzip instead of gunzip.
+
+[1m成员，请使用解压缩代替gunzip。[22m
+[1m(Chéngyuán, qǐng shǐyòng jiě yāsuō dàitì gunzip.)[22m
+
+Translations of [4mmembers, use unzip instead of gunzip.[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mmembers, use unzip instead of gunzip.[24m
+    [1m成员，请使用解压缩代替gunzip。[22m, [1m成员，使用解压缩，而不是gunzip解。[22m
+
+zcat  is identical to gunzip -c. (On some systems, zcat may be installed as gzcat to pre‐
+
+[1mzcat与gunzip -c相同。 （在某些系统上，zcat可以安装为gzcat，[22m
+[1m(Zcat yǔ gunzip -c xiāngtóng. (Zài mǒu xiē xìtǒng shàng,zcat kěyǐ ānzhuāng wèi gzcat,)[22m
+
+Translations of [4mzcat  is identical to gunzip -c. (On some systems, zcat may be installed as gzcat to pre‐[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mzcat  is identical to gunzip -c.[24m
+    [1mzcat与gunzip -c相同。[22m, [1mZCAT是相同的用gunzip -c。[22m
+[4m(On some systems, zcat may be installed as gzcat to pre‐[24m
+    [1m（在某些系统上，zcat可以安装为gzcat，[22m, [1m（在一些系统，ZCAT可安装为gzcat到预[22m
+
+serve the original link to compress.)  zcat uncompresses either a list  of  files  on  the
+
+[1m服务原始链接进行压缩。）zcat解压缩文件列表[22m
+[1m(Fúwù yuánshǐ liànjiē jìnxíng yāsuō.)Zcat jiě yāsuō wénjiàn lièbiǎo)[22m
+
+Translations of [4mserve the original link to compress.)  zcat uncompresses either a list  of  files  on  the[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mserve the original link to compress.)  zcat uncompresses either a list  of  files  on  the[24m
+    [1m服务原始链接进行压缩。）zcat解压缩文件列表[22m, [1m服务于原始链接压缩。）用zcat解压无论是在文件列表[22m
+
+command  line  or  its standard input and writes the uncompressed data on standard output.
+
+[1m命令行或其标准输入，并将未压缩的数据写入标准输出。[22m
+[1m(Mìnglìng xíng huò qí biāozhǔn shūrù, bìng jiāng wèi yāsuō de shùjù xiě rù biāozhǔn shūchū.)[22m
+
+Translations of [4mcommand  line  or  its standard input and writes the uncompressed data on standard output.[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mcommand  line  or  its standard input and writes the uncompressed data on standard output.[24m
+    [1m命令行或其标准输入，并将未压缩的数据写入标准输出。[22m, [1m命令行或它的标准输入和写入标准输出的未压缩数据。[22m
+
+zcat will uncompress files that have the correct magic number whether they have a .gz suf‐
+
+[1mzcat将解压缩具有正确幻数的文件，无论它们是否具有.gz suf-[22m
+[1m(Zcat jiāng jiě yāsuō jùyǒu zhèngquè huàn shǔ de wénjiàn, wúlùn tāmen shìfǒu jùyǒu.Gz suf-)[22m
+
+Translations of [4mzcat will uncompress files that have the correct magic number whether they have a .gz suf‐[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mzcat will uncompress files that have the correct magic number whether they have a .gz suf‐[24m
+    [1mzcat将解压缩具有正确幻数的文件，无论它们是否具有.gz suf-[22m, [1mzcat解压具有正确的幻数的文件是否带有.gz suf-[22m
+
+fix or not.
+
+[1m修复或不修复。[22m
+[1m(Xiūfù huò bù xiūfù.)[22m
+
+Translations of [4mfix or not.[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mfix or not.[24m
+    [1m修复或不修复。[22m, [1m修复或没有。[22m
+
+Gzip  uses  the  Lempel-Ziv  algorithm  used  in zip and PKZIP. The amount of compression
+
+[1mGzip使用zip和PKZIP中使用的Lempel-Ziv算法。压缩量[22m
+[1m(Gzip shǐyòng zip hé PKZIP zhōng shǐyòng de Lempel-Ziv suànfǎ. Yāsuō liàng)[22m
+
+Translations of [4mGzip  uses  the  Lempel-Ziv  algorithm  used  in zip and PKZIP. The amount of compression[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mGzip  uses  the  Lempel-Ziv  algorithm  used  in zip and PKZIP.[24m
+    [1mGzip使用zip和PKZIP中使用的Lempel-Ziv算法。[22m, [1mGzip采用ZIP和PKZIP所用的Lempel-谢夫算法。[22m
+[4mThe amount of compression[24m
+    [1m压缩量[22m
+
+obtained depends on the size of the input and the distribution of common substrings. Typ‐
+
+[1m获得取决于输入的大小和常见子字符串的分布。 Typ-[22m
+[1m(Huòdé qǔjué yú shūrù de dàxiǎo hé chángjiàn zi zìfú chuàn de fēnbù. Typ-)[22m
+
+Translations of [4mobtained depends on the size of the input and the distribution of common substrings. Typ‐[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mobtained depends on the size of the input and the distribution of common substrings.[24m
+    [1m获得取决于输入的大小和常见子字符串的分布。[22m, [1m得到依赖于输入的尺寸和共同子串的分布。[22m
+[4mTyp-[24m
+    [1mTyp-[22m
+
+ically,  text  such as source code or English is reduced by 60-70%. Compression is gener‐
+
+[1m原文如源代码或英文减少60-70％。压缩是通用的，[22m
+[1m(Yuánwén rú yuán dàimǎ huò yīngwén jiǎnshǎo 60-70%. Yāsuō shì tōngyòng de,)[22m
+
+Translations of [4mically,  text  such as source code or English is reduced by 60-70%. Compression is gener‐[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mically,  text  such as source code or English is reduced by 60-70%.[24m
+    [1m原文如源代码或英文减少60-70％。[22m, [1mically，文本，如源代码或英语是由60-70％降低。[22m
+[4mCompression is gener‐[24m
+    [1m压缩是通用的，[22m, [1m压缩是根儿[22m
+
+ally much better than that achieved by LZW (as used in compress), Huffman coding (as  used
+
+[1m同样比LZW（用于压缩），霍夫曼编码（如使用的）更好[22m
+[1m(Tóngyàng bǐ LZW(yòng yú yāsuō), huò fū màn biānmǎ (rú shǐyòng de) gèng hǎo)[22m
+
+Translations of [4mally much better than that achieved by LZW (as used in compress), Huffman coding (as  used[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mally much better than that achieved by LZW (as used in compress), Huffman coding (as  used[24m
+    [1m同样比LZW（用于压缩），霍夫曼编码（如使用的）更好[22m, [1m盟友比由LZW（compress采用），Huffman编码实现更好的（如使用[22m
+
+in pack), or adaptive Huffman coding (compact).
+
+[1m包），或自适应霍夫曼编码（紧凑）。[22m
+[1m(Bāo), huò zì shìyìng huò fū màn biānmǎ (jǐncòu).)[22m
+
+Translations of [4min pack), or adaptive Huffman coding (compact).[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4min pack), or adaptive Huffman coding (compact).[24m
+    [1m包），或自适应霍夫曼编码（紧凑）。[22m, [1m在包），或自适应霍夫曼编码（压缩）。[22m
+
+Compression  is  always performed, even if the compressed file is slightly larger than the
+
+[1m即使压缩文件稍大于压缩文件，也会始终执行压缩[22m
+[1m(Jíshǐ yāsuō wénjiàn shāo dàyú yāsuō wénjiàn, yě huì shǐzhōng zhíxíng yāsuō)[22m
+
+Translations of [4mCompression  is  always performed, even if the compressed file is slightly larger than the[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mCompression  is  always performed, even if the compressed file is slightly larger than the[24m
+    [1m即使压缩文件稍大于压缩文件，也会始终执行压缩[22m, [1m压缩是总是执行，即使压缩文件比稍大[22m
+
+original. The worst case expansion is a few bytes for the gzip file header, plus  5  bytes
+
+[1m原版的。最坏的情况扩展是gzip文件头的几个字节，再加上5个字节[22m
+[1m(Yuánbǎn de. Zuì huài de qíngkuàng kuòzhǎn shì gzip wénjiàn tóu de jǐ gè zì jié, zài jiā shàng 5 gè zì jié)[22m
+
+Translations of [4moriginal. The worst case expansion is a few bytes for the gzip file header, plus  5  bytes[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4moriginal.[24m
+    [1m原版的。[22m, [1m原始。[22m, [1m原。[22m, [1m原来。[22m
+[4mThe worst case expansion is a few bytes for the gzip file header, plus  5  bytes[24m
+    [1m最坏的情况扩展是gzip文件头的几个字节，再加上5个字节[22m, [1m最坏的情况下扩张是gzip文件头中的几个字节，加上5个字节[22m
+
+every  32K  block,  or  an expansion ratio of 0.015% for large files. Note that the actual
+
+[1m每32K块，或大文件扩展率为0.015％。请注意，实际[22m
+[1m(Měi 32K kuài, huò dà wénjiàn kuòzhǎn lǜ wèi 0.015%. Qǐng zhùyì, shíjì)[22m
+
+Translations of [4mevery  32K  block,  or  an expansion ratio of 0.015% for large files. Note that the actual[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mevery  32K  block,  or  an expansion ratio of 0.015% for large files.[24m
+    [1m每32K块，或大文件扩展率为0.015％。[22m, [1m每32K块，或0.015％对于大文件的膨胀率。[22m
+[4mNote that the actual[24m
+    [1m请注意，实际[22m
+
+number of used disk blocks almost never increases. gzip preserves the mode, ownership and
+
+[1m使用的磁盘块数量几乎不会增加。 gzip保留模式，所有权和[22m
+[1m(Shǐyòng de cípán kuài shùliàng jīhū bù huì zēngjiā. Gzip bǎoliú móshì, suǒyǒuquán hé)[22m
+
+Translations of [4mnumber of used disk blocks almost never increases. gzip preserves the mode, ownership and[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mnumber of used disk blocks almost never increases.[24m
+    [1m使用的磁盘块数量几乎不会增加。[22m, [1m使用的磁盘块的数量几乎没有增加。[22m
+[4mgzip preserves the mode, ownership and[24m
+    [1mgzip保留模式，所有权和[22m, [1mgzip的保留模式，所有权和[22m
+
+timestamps of files when compressing or decompressing.
+
+[1m压缩或解压缩时的文件时间戳。[22m
+[1m(Yāsuō huò jiě yāsuō shí de wénjiàn shíjiān chuō.)[22m
+
+Translations of [4mtimestamps of files when compressing or decompressing.[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mtimestamps of files when compressing or decompressing.[24m
+    [1m压缩或解压缩时的文件时间戳。[22m, [1m压缩或解压缩文件时的时间戳。[22m
+
+OPTIONS
+
+[1mOPTIONS[22m
+[1m(OPTIONS)[22m
+
+Translations of [4mOPTIONS[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mOPTIONS[24m
+    [1mOPTIONS[22m, [1m选项[22m, [1m期权[22m, [1m股权[22m, [1m选件[22m
+
+-a --ascii
+
+[1m-a --ascii[22m
+[1m(-A --ascii)[22m
+
+Translations of [4m-a --ascii[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4m-a --ascii[24m
+    [1m-a --ascii[22m
+
+Ascii  text mode: convert end-of-lines using local conventions. This option is sup‐
+
+[1mASCII文本模式：使用本地约定转换行尾。这个选项是支持的，[22m
+[1m(ASCII wénběn móshì: Shǐyòng běndì yuēdìng zhuǎnhuàn háng wěi. Zhège xuǎnxiàng shì zhīchí de,)[22m
+
+Translations of [4mAscii  text mode: convert end-of-lines using local conventions. This option is sup‐[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mAscii  text mode: convert end-of-lines using local conventions.[24m
+    [1mASCII文本模式：使用本地约定转换行尾。[22m, [1mASCII文本模式：转换结束线使用本地约定。[22m
+[4mThis option is sup‐[24m
+    [1m这个选项是支持的，[22m, [1m此选项燮[22m
+
+ported only on some non-Unix systems. For MSDOS, CR LF is converted to LF when com‐
+
+[1m仅在一些非Unix系统上移植。对于MSDOS，CR LF在com-[22m
+[1m(Jǐn zài yīxiē fēi Unix xìtǒng shàng yízhí. Duìyú MSDOS,CR LF zài com-)[22m
+
+Translations of [4mported only on some non-Unix systems. For MSDOS, CR LF is converted to LF when com‐[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mported only on some non-Unix systems.[24m
+    [1m仅在一些非Unix系统上移植。[22m, [1m仅在一些非Unix系统移植。[22m
+[4mFor MSDOS, CR LF is converted to LF when com‐[24m
+    [1m对于MSDOS，CR LF在com-[22m, [1m对于MSDOS，CR LF被的COM当转换为LF[22m
+
+pressing, and LF is converted to CR LF when decompressing.
+
+[1m按下，并在解压缩时将LF转换为CR LF。[22m
+[1m(Àn xià, bìng zài jiě yāsuō shí jiāng LF zhuǎnhuàn wèi CR LF.)[22m
+
+Translations of [4mpressing, and LF is converted to CR LF when decompressing.[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mpressing, and LF is converted to CR LF when decompressing.[24m
+    [1m按下，并在解压缩时将LF转换为CR LF。[22m, [1m按压，并且解压缩时LF被转换为CR LF。[22m
+
+-c --stdout --to-stdout
+
+[1m-c --stdout --to-stdout[22m
+[1m(-C --stdout --to-stdout)[22m
+
+Translations of [4m-c --stdout --to-stdout[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4m-c --stdout --to-stdout[24m
+    [1m-c --stdout --to-stdout[22m, [1m-c --stdout --to-stdout中[22m
+
+Write  output on standard output; keep original files unchanged. If there are sev‐
+
+[1m在标准输出上写输出;保持原始文件不变。如果有sev-[22m
+[1m(Zài biāozhǔn shūchū shàng xiě shūchū; bǎochí yuánshǐ wénjiàn bù biàn. Rúguǒ yǒu sev-)[22m
+
+Translations of [4mWrite  output on standard output; keep original files unchanged. If there are sev‐[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mWrite  output on standard output;[24m
+    [1m在标准输出上写输出;[22m, [1m写在标准输出输出;[22m
+[4mkeep original files unchanged.[24m
+    [1m保持原始文件不变。[22m
+[4mIf there are sev‐[24m
+    [1m如果有sev-[22m
+
+eral input files, the output consists of a  sequence  of  independently  compressed
+
+[1meral输入文件，输出包含一系列独立压缩的文件[22m
+[1m(Eral shūrù wénjiàn, shūchū bāohán yī xìliè dúlì yāsuō de wénjiàn)[22m
+
+Translations of [4meral input files, the output consists of a  sequence  of  independently  compressed[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4meral input files, the output consists of a  sequence  of  independently  compressed[24m
+    [1meral输入文件，输出包含一系列独立压缩的文件[22m, [1m全部擦除输入文件时，输出由独立压缩序列的[22m
+
+members. To obtain better compression, concatenate all input files before compress‐
+
+[1m成员。要获得更好的压缩效果，请在压缩之前连接所有输入文件 - [22m
+[1m(Chéngyuán. Yào huòdé gèng hǎo de yāsuō xiàoguǒ, qǐng zài yāsuō zhīqián liánjiē suǒyǒu shūrù wénjiàn - )[22m
+
+Translations of [4mmembers. To obtain better compression, concatenate all input files before compress‐[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mmembers .[24m
+    [1m成员。[22m
+[4mTo obtain better compression, concatenate all input files before compress‐[24m
+    [1m要获得更好的压缩效果，请在压缩之前连接所有输入文件 - [22m, [1m为了获得更好的压缩，之前compress-多个文件连在一起[22m
+
+ing them.
+
+[1m他们。[22m
+[1m(Tāmen.)[22m
+
+Translations of [4ming them.[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4ming them.[24m
+    [1m他们。[22m, [1m荷兰国际集团他们。[22m
+
+-d --decompress --uncompress
+
+[1m-d  - 解压缩--uncompress[22m
+[1m(-D  - jiě yāsuō--uncompress)[22m
+
+Translations of [4m-d --decompress --uncompress[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4m-d --decompress --uncompress[24m
+    [1m-d  - 解压缩--uncompress[22m, [1m-d --decompress --uncompress[22m
+
+Decompress.
+/ˌdēkəmˈpres/
+
+[1m解压缩。[22m
+[1m(Jiě yāsuō.)[22m
+
+Definitions of [4mDecompress.[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+verb
+[1m    解压缩[22m
+        decompress
+
+[4mDecompress .[24m
+    [1m解压缩。[22m
+
+-f --force
+
+[1m-f --force[22m
+[1m(-F --force)[22m
+
+Translations of [4m-f --force[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4m-f --force[24m
+    [1m-f --force[22m
+
+Force compression or decompression even if the file has multiple links or the  cor‐
+
+[1m即使文件有多个链接或者cor-[22m
+[1m(Jíshǐ wénjiàn yǒu duō gè liànjiē huòzhě cor-)[22m
+
+Translations of [4mForce compression or decompression even if the file has multiple links or the  cor‐[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mForce compression or decompression even if the file has multiple links or the  cor‐[24m
+    [1m即使文件有多个链接或者cor-[22m, [1m强制压缩和解压缩，即使指定文件具有多重连接，或心病[22m
+
+responding  file  already exists, or if the compressed data is read from or written
+
+[1m响应文件已经存在，或者如果压缩数据被读取或写入[22m
+[1m(Xiǎngyìng wénjiàn yǐjīng cúnzài, huòzhě rúguǒ yāsuō shùjù bèi dòu qǔ huò xiě rù)[22m
+
+Translations of [4mresponding  file  already exists, or if the compressed data is read from or written[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mresponding  file  already exists, or if the compressed data is read from or written[24m
+    [1m响应文件已经存在，或者如果压缩数据被读取或写入[22m, [1m响应文件已经存在，或者如果压缩的数据读取或写入[22m
+
+to a terminal. If the input data is not in a format recognized by gzip, and if  the
+
+[1m到终端。如果输入数据的格式不是gzip所能识别的格式，并且[22m
+[1m(Dào zhōngduān. Rúguǒ shūrù shùjù de géshì bùshì gzip suǒ néng shìbié de géshì, bìngqiě)[22m
+
+Translations of [4mto a terminal. If the input data is not in a format recognized by gzip, and if  the[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mto a terminal.[24m
+    [1m到终端。[22m
+[4mIf the input data is not in a format recognized by gzip, and if  the[24m
+    [1m如果输入数据的格式不是gzip所能识别的格式，并且[22m, [1m如果输入数据是gzip无法识别的格式，如果[22m
+
+option  --stdout  is also given, copy the input data without change to the standard
+
+[1m选项--stdout也会给出，复制输入数据而不更改为标准[22m
+[1m(Xuǎnxiàng--stdout yě huì gěi chū, fùzhì shūrù shùjù ér bù gēnggǎi wèi biāozhǔn)[22m
+
+Translations of [4moption  --stdout  is also given, copy the input data without change to the standard[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4moption  --stdout  is also given, copy the input data without change to the standard[24m
+    [1m选项--stdout也会给出，复制输入数据而不更改为标准[22m, [1m选项--stdout也给出，没有改变拷贝输入的数据为标准[22m
+
+output: let zcat behave as cat. If -f is not given, and when not  running  in  the
+
+[1m输出：让zcat表现得像猫一样。如果没有给出-f，并且在没有运行的时候[22m
+[1m(Shūchū: Ràng zcat biǎoxiàn dé xiàng māo yīyàng. Rúguǒ méiyǒu gěi chū-f, bìngqiě zài méiyǒu yùnxíng de shíhòu)[22m
+
+Translations of [4moutput: let zcat behave as cat. If -f is not given, and when not  running  in  the[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4moutput: let zcat behave as cat.[24m
+    [1m输出：让zcat表现得像猫一样。[22m, [1m输出：让用zcat表现为猫。[22m
+[4mIf -f is not given, and when not  running  in  the[24m
+    [1m如果没有给出-f，并且在没有运行的时候[22m, [1m如果-f没有给出，而当在非运行[22m
+
+background, gzip prompts to verify whether an existing file should be overwritten.
+
+[1m背景，gzip会提示验证现有文件是否应该被覆盖。[22m
+[1m(Bèijǐng,gzip huì tíshì yànzhèng xiàn yǒu wénjiàn shìfǒu yīnggāi bèi fùgài.)[22m
+
+Translations of [4mbackground, gzip prompts to verify whether an existing file should be overwritten.[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mbackground, gzip prompts to verify whether an existing file should be overwritten.[24m
+    [1m背景，gzip会提示验证现有文件是否应该被覆盖。[22m, [1m背景，gzip会提示用户验证现有文件是否应该覆盖。[22m
+
+-h --help
+
+[1m-h  - 帮助[22m
+[1m(-H  - bāngzhù)[22m
+
+Translations of [4m-h --help[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4m-h --help[24m
+    [1m-h  - 帮助[22m, [1m-h --help[22m
+
+Display a help screen and quit.
+
+[1m显示帮助屏幕并退出。[22m
+[1m(Xiǎnshì bāngzhù píngmù bìng tuìchū.)[22m
+
+Translations of [4mDisplay a help screen and quit.[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mDisplay a help screen and quit.[24m
+    [1m显示帮助屏幕并退出。[22m, [1m显示帮助并退出。[22m
+
+-k --keep
+
+[1m-k  - 保持[22m
+[1m(-K  - bǎochí)[22m
+
+Translations of [4m-k --keep[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4m-k --keep[24m
+    [1m-k  - 保持[22m, [1m-k --keep[22m
+
+Keep (don't delete) input files during compression or decompression.
+
+[1m在压缩或解压缩期间保持（不要删除）输入文件。[22m
+[1m(Zài yāsuō huò jiě yāsuō qíjiān bǎochí (bùyào shānchú) shūrù wénjiàn.)[22m
+
+Translations of [4mKeep (don't delete) input files during compression or decompression.[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mKeep (don't delete) input files during compression or decompression.[24m
+    [1m在压缩或解压缩期间保持（不要删除）输入文件。[22m, [1m保留（不要删除）输入文件压缩或解压缩过程中。[22m
+
+-l --list
+
+[1m-l --list[22m
+[1m(-L --list)[22m
+
+Translations of [4m-l --list[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4m-l --list[24m
+    [1m-l --list[22m
+
+For each compressed file, list the following fields:
+
+[1m对于每个压缩文件，列出以下字段：[22m
+[1m(Duìyú měi gè yāsuō wénjiàn, liè chū yǐxià zìduàn:)[22m
+
+Translations of [4mFor each compressed file, list the following fields:[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mFor each compressed file, list the following fields:[24m
+    [1m对于每个压缩文件，列出以下字段：[22m, [1m对于每一个压缩文件，列出以下字段：[22m
+
+compressed size: size of the compressed file
+
+[1m压缩大小：压缩文件的大小[22m
+[1m(Yāsuō dàxiǎo: Yāsuō wénjiàn de dàxiǎo)[22m
+
+Translations of [4mcompressed size: size of the compressed file[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mcompressed size: size of the compressed file[24m
+    [1m压缩大小：压缩文件的大小[22m, [1m压缩后大小：压缩文件的大小[22m
+
+uncompressed size: size of the uncompressed file
+
+[1m未压缩大小：未压缩文件的大小[22m
+[1m(Wèi yāsuō dàxiǎo: Wèi yāsuō wénjiàn de dàxiǎo)[22m
+
+Translations of [4muncompressed size: size of the uncompressed file[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4muncompressed size: size of the uncompressed file[24m
+    [1m未压缩大小：未压缩文件的大小[22m
+
+ratio: compression ratio (0.0% if unknown)
+
+[1m比例：压缩比例（如果未知，则为0.0％）[22m
+[1m(Bǐlì: Yāsuō bǐlì (rúguǒ wèizhī, zé wèi 0.0%))[22m
+
+Translations of [4mratio: compression ratio (0.0% if unknown)[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mratio: compression ratio (0.0% if unknown)[24m
+    [1m比例：压缩比例（如果未知，则为0.0％）[22m, [1m比：压缩比（0.0％如果未知）[22m
+
+uncompressed_name: name of the uncompressed file
+
+[1muncompressed_name：未压缩文件的名称[22m
+[1m(Uncompressed_name: Wèi yāsuō wénjiàn de míngchēng)[22m
+
+Translations of [4muncompressed_name: name of the uncompressed file[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4muncompressed_name: name of the uncompressed file[24m
+    [1muncompressed_name：未压缩文件的名称[22m, [1muncompressed_name：压缩文件名[22m
+
+The  uncompressed  size  is  given as -1 for files not in gzip format, such as com‐
+
+[1m对于非gzip格式的文件，未压缩大小为-1，例如com-[22m
+[1m(Duìyú fēi gzip géshì de wénjiàn, wèi yāsuō dàxiǎo wèi-1, lìrú com-)[22m
+
+Translations of [4mThe  uncompressed  size  is  given as -1 for files not in gzip format, such as com‐[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mThe  uncompressed  size  is  given as -1 for files not in gzip format, such as com‐[24m
+    [1m对于非gzip格式的文件，未压缩大小为-1，例如com-[22m, [1m未压缩的大小显示为-1不gzip格式的文件，如COM的[22m
+
+pressed .Z files. To get the uncompressed size for such a file, you can use:
+
+[1m按下.Z文件。要获得这种文件的未压缩大小，您可以使用：[22m
+[1m(Àn xià.Z wénjiàn. Yào huòdé zhè zhǒng wénjiàn de wèi yāsuō dàxiǎo, nín kěyǐ shǐyòng:)[22m
+
+Translations of [4mpressed .Z files. To get the uncompressed size for such a file, you can use:[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mpressed .Z files.[24m
+    [1m按下.Z文件。[22m, [1m压制.Z文件。[22m
+[4mTo get the uncompressed size for such a file, you can use:[24m
+    [1m要获得这种文件的未压缩大小，您可以使用：[22m, [1m要获得这样的文件未压缩的大小，你可以使用：[22m
+
+zcat file.Z | wc -c
+
+[1mzcat file.Z | wc -c[22m
+[1m(Zcat file.Z | wc -c)[22m
+
+Translations of [4mzcat file.Z | wc -c[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mzcat file.Z |[24m
+    [1mzcat file.Z |[22m
+[4mwc -c[24m
+    [1mwc -c[22m
+
+In combination with the --verbose option, the following fields are also displayed:
+
+[1m结合--verbose选项，还会显示以下字段：[22m
+[1m(Jiéhé--verbose xuǎnxiàng, hái huì xiǎnshì yǐxià zìduàn:)[22m
+
+Translations of [4mIn combination with the --verbose option, the following fields are also displayed:[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mIn combination with the --verbose option, the following fields are also displayed:[24m
+    [1m结合--verbose选项，还会显示以下字段：[22m, [1m与--verbose选项组合，也显示在以下领域：[22m
+
+method: compression method
+
+[1m方法：压缩方法[22m
+[1m(Fāngfǎ: Yāsuō fāngfǎ)[22m
+
+Translations of [4mmethod: compression method[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mmethod: compression method[24m
+    [1m方法：压缩方法[22m
+
+crc: the 32-bit CRC of the uncompressed data
+
+[1mcrc：未压缩数据的32位CRC[22m
+[1m(Crc: Wèi yāsuō shùjù de 32 wèi CRC)[22m
+
+Translations of [4mcrc: the 32-bit CRC of the uncompressed data[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mcrc: the 32-bit CRC of the uncompressed data[24m
+    [1mcrc：未压缩数据的32位CRC[22m
+
+date & time: time stamp for the uncompressed file
+
+[1m日期和时间：未压缩文件的时间戳[22m
+[1m(Rìqí hé shíjiān: Wèi yāsuō wénjiàn de shíjiān chuō)[22m
+
+Translations of [4mdate & time: time stamp for the uncompressed file[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mdate & time: time stamp for the uncompressed file[24m
+    [1m日期和时间：未压缩文件的时间戳[22m, [1m日期和时间：时间标记为未压缩文件[22m
+
+The compression methods currently supported are deflate, compress,  lzh  (SCO  com‐
+
+[1m目前支持的压缩方法有deflate，compress，lzh（SCO com-[22m
+[1m(Mùqián zhīchí de yāsuō fāngfǎ yǒu deflate,compress,lzh(SCO com-)[22m
+
+Translations of [4mThe compression methods currently supported are deflate, compress,  lzh  (SCO  com‐[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mThe compression methods currently supported are deflate, compress,  lzh  (SCO  com‐[24m
+    [1m目前支持的压缩方法有deflate，compress，lzh（SCO com-[22m, [1m目前支持的压缩方式有deflate，压缩，LZH（SCO的COM[22m
+
+press -H) and pack. The crc is given as ffffffff for a file not in gzip format.
+
+[1m按-H）并打包。对于不是gzip格式的文件，crc是以ffffffff的形式给出的。[22m
+[1m(Àn-H) bìng dǎbāo. Duìyú bùshì gzip géshì de wénjiàn,crc shì yǐ ffffffff de xíngshì gěi chū de.)[22m
+
+Translations of [4mpress -H) and pack. The crc is given as ffffffff for a file not in gzip format.[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mpress -H) and pack.[24m
+    [1m按-H）并打包。[22m, [1m按H）和包。[22m
+[4mThe crc is given as ffffffff for a file not in gzip format.[24m
+    [1m对于不是gzip格式的文件，crc是以ffffffff的形式给出的。[22m, [1mCRC是为ffffffff用于非gzip格式的文件。[22m
+
+With  --name,  the  uncompressed  name,  date and time  are those stored within the
+
+[1m使用--name，未压缩的名称，日期和时间是存储在[22m
+[1m(Shǐyòng--name, wèi yāsuō de míngchēng, rìqí hé shíjiān shì cúnchú zài)[22m
+
+Translations of [4mWith  --name,  the  uncompressed  name,  date and time  are those stored within the[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mWith  --name,  the  uncompressed  name,  date and time  are those stored within the[24m
+    [1m使用--name，未压缩的名称，日期和时间是存储在[22m, [1m随着--name，未压缩的名称，日期和时间是那些存储内[22m
+
+compress file if present.
+
+[1m压缩文件如果存在。[22m
+[1m(Yāsuō wénjiàn rúguǒ cúnzài.)[22m
+
+Translations of [4mcompress file if present.[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mcompress file if present.[24m
+    [1m压缩文件如果存在。[22m, [1m如果存在压缩文件。[22m
+
+With --verbose, the size totals and compression ratio for all files  is  also  dis‐
+
+[1m使用--verbose时，所有文件的大小总计和压缩比也是不一致的，[22m
+[1m(Shǐyòng--verbose shí, suǒyǒu wénjiàn de dàxiǎo zǒngjì hé yāsuō bǐ yěshì bùyīzhì de,)[22m
+
+Translations of [4mWith --verbose, the size totals and compression ratio for all files  is  also  dis‐[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mWith --verbose, the size totals and compression ratio for all files  is  also  dis‐[24m
+    [1m使用--verbose时，所有文件的大小总计和压缩比也是不一致的，[22m, [1m随着--verbose，大小总数和压缩比的所有文件也解散[22m
+
+played, unless some sizes are unknown. With --quiet, the title and totals lines are
+
+[1m播放，除非有些尺寸未知。用--quiet，标题和总计线是[22m
+[1m(Bòfàng, chúfēi yǒuxiē chǐcùn wèizhī. Yòng--quiet, biāotí hé zǒngjì xiàn shì)[22m
+
+Translations of [4mplayed, unless some sizes are unknown. With --quiet, the title and totals lines are[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mplayed, unless some sizes are unknown.[24m
+    [1m播放，除非有些尺寸未知。[22m, [1m玩，除非某些尺寸是未知的。[22m
+[4mWith --quiet, the title and totals lines are[24m
+    [1m用--quiet，标题和总计线是[22m, [1m随着--quiet，标题和汇总线[22m
+
+not displayed.
+
+[1m没有显示。[22m
+[1m(Méiyǒu xiǎnshì.)[22m
+
+Translations of [4mnot displayed.[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mnot displayed.[24m
+    [1m没有显示。[22m, [1m不显示。[22m
+
+-L --license
+
+[1m-L  - 许可证[22m
+[1m(-L  - xǔkě zhèng)[22m
+
+Translations of [4m-L --license[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4m-L --license[24m
+    [1m-L  - 许可证[22m, [1m-L --license[22m
+
+Display the gzip license and quit.
+
+[1m显示gzip许可证并退出。[22m
+[1m(Xiǎnshì gzip xǔkě zhèng bìng tuìchū.)[22m
+
+Translations of [4mDisplay the gzip license and quit.[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mDisplay the gzip license and quit.[24m
+    [1m显示gzip许可证并退出。[22m
+
+-n --no-name
+
+[1m-n  - 无名[22m
+[1m(-N  - wúmíng)[22m
+
+Translations of [4m-n --no-name[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4m-n --no-name[24m
+    [1m-n  - 无名[22m, [1m-n --no名[22m
+
+When compressing, do not save the original file name and  time  stamp  by  default.
+
+[1m压缩时，默认情况下不保存原始文件名和时间戳。[22m
+[1m(Yāsuō shí, mòrèn qíngkuàng xià bù bǎocún yuánshǐ wénjiàn mínghé shíjiān chuō.)[22m
+
+Translations of [4mWhen compressing, do not save the original file name and  time  stamp  by  default.[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mWhen compressing, do not save the original file name and  time  stamp  by  default.[24m
+    [1m压缩时，默认情况下不保存原始文件名和时间戳。[22m, [1m在压缩时不保存默认的原始文件名和时间信息。[22m
+
+(The  original  name  is always saved if the name had to be truncated.) When decom‐
+
+[1m（如果名称必须被截断，则始终保存原始名称。）当decom-[22m
+[1m((Rúguǒ míngchēng bìxū bèi jiéduàn, zé shǐzhōng bǎocún yuánshǐ míngchēng.) Dāng decom-)[22m
+
+Translations of [4m(The  original  name  is always saved if the name had to be truncated.) When decom‐[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4m(The  original  name  is always saved if the name had to be truncated.) When decom‐[24m
+    [1m（如果名称必须被截断，则始终保存原始名称。）当decom-[22m, [1m（原来的名称总是被保存，如果名字已经被截断。）decom-当[22m
+
+pressing, do not restore the original file name if present (remove  only  the  gzip
+
+[1m按下，如果存在，则不要恢复原始文件名（只删除gzip[22m
+[1m(Àn xià, rúguǒ cúnzài, zé bùyào huīfù yuánshǐ wénjiàn míng (zhǐ shānchú gzip)[22m
+
+Translations of [4mpressing, do not restore the original file name if present (remove  only  the  gzip[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mpressing, do not restore the original file name if present (remove  only  the  gzip[24m
+    [1m按下，如果存在，则不要恢复原始文件名（只删除gzip[22m, [1m紧迫的，不恢复原始文件名（如果存在）（只删除的gzip[22m
+
+suffix from the compressed file name) and do not restore the original time stamp if
+
+[1m来自压缩文件名的后缀），并且不会恢复原始时间戳[22m
+[1m(Láizì yāsuō wénjiàn míng de hòuzhuì), bìngqiě bù huì huīfù yuánshǐ shíjiān chuō)[22m
+
+Translations of [4msuffix from the compressed file name) and do not restore the original time stamp if[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4msuffix from the compressed file name) and do not restore the original time stamp if[24m
+    [1m来自压缩文件名的后缀），并且不会恢复原始时间戳[22m, [1m从压缩文件的后缀名），并没有恢复到原来的时间戳如果[22m
+
+present (copy it from the compressed file). This option is the default when  decom‐
+
+[1m目前（从压缩文件复制）。此选项是decom-[22m
+[1m(Mùqián (cóng yāsuō wénjiàn fùzhì). Cǐ xuǎnxiàng shì decom-)[22m
+
+Translations of [4mpresent (copy it from the compressed file). This option is the default when  decom‐[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mpresent (copy it from the compressed file).[24m
+    [1m目前（从压缩文件复制）。[22m, [1m本（从压缩文件复制）。[22m
+[4mThis option is the default when  decom‐[24m
+    [1m此选项是decom-[22m, [1m此选项是默认decom-时[22m
+
+pressing.
+/ˈpresiNG/
+
+[1m紧迫。[22m
+[1m(Jǐnpò.)[22m
+
+Definitions of [4mpressing.[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+adjective
+[1m    紧迫[22m
+        urgent, pressing, imminent
+[1m    迫切[22m
+        urgent, pressing, imperative
+[1m    紧急[22m
+        urgent, pressing, crash, exigent, bailout, expeditious
+[1m    急迫[22m
+        urgent, pressing, imperative
+[1m    刻不容缓[22m
+        pressing, acute
+[1m    紧[22m
+        tight, compact, close, urgent, pressing, strict
+[1m    迫[22m
+        urgent, pressing
+[1m    急[22m
+        anxious, urgent, rapid, sharp, sudden, pressing
+[1m    急促[22m
+        rapid, short, hurried, pressing
+
+noun
+[1m    压制[22m
+        pressing, oppression
+[1m    冲压[22m
+        stamping, punching, pressing
+[1m    逼人[22m
+        pressing
+
+[4mpressing.[24m
+    [1m紧迫。[22m, [1m迫切。[22m, [1m压制。[22m
+
+-N --name
+
+[1m-N  - 名称[22m
+[1m(-N  - míngchēng)[22m
+
+Translations of [4m-N --name[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4m-N --name[24m
+    [1m-N  - 名称[22m, [1m-N --name[22m
+
+When  compressing,  always  save the original file name and time stamp; this is the
+
+[1m压缩时，请始终保存原始文件名和时间戳;这是[22m
+[1m(Yāsuō shí, qǐng shǐzhōng bǎocún yuánshǐ wénjiàn mínghé shíjiān chuō; zhè shì)[22m
+
+Translations of [4mWhen  compressing,  always  save the original file name and time stamp; this is the[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mWhen  compressing,  always  save the original file name and time stamp;[24m
+    [1m压缩时，请始终保存原始文件名和时间戳;[22m, [1m压缩时总是保存原始文件名和时间信息;[22m
+[4mthis is the[24m
+    [1m这是[22m
+
+default. When decompressing, restore the original  file  name  and  time  stamp  if
+
+[1m默认。解压缩时，请恢复原始文件名和时间戳[22m
+[1m(Mòrèn. Jiě yāsuō shí, qǐng huīfù yuánshǐ wénjiàn mínghé shíjiān chuō)[22m
+
+Translations of [4mdefault. When decompressing, restore the original  file  name  and  time  stamp  if[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mdefault.[24m
+    [1m默认。[22m, [1m缺省。[22m
+[4mWhen decompressing, restore the original  file  name  and  time  stamp  if[24m
+    [1m解压缩时，请恢复原始文件名和时间戳[22m, [1m在解压缩时，恢复原来的文件名和时间戳如果[22m
+
+present. This option is useful on systems which have a limit on file name length or
+
+[1m当下。此选项在文件名长度受限的系统上很有用[22m
+[1m(Dāngxià. Cǐ xuǎnxiàng zài wénjiàn míng chángdù shòu xiàn de xìtǒng shàng hěn yǒuyòng)[22m
+
+Translations of [4mpresent. This option is useful on systems which have a limit on file name length or[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mpresent.[24m
+    [1m当下。[22m, [1m当前。[22m, [1m目前。[22m
+[4mThis option is useful on systems which have a limit on file name length or[24m
+    [1m此选项在文件名长度受限的系统上很有用[22m, [1m此选项可用于对文件名长度或者限制系统有用[22m
+
+when the time stamp has been lost after a file transfer.
+
+[1m当文件传输后时间戳丢失时。[22m
+[1m(Dāng wénjiàn chuánshū hòu shíjiān chuō diūshī shí.)[22m
+
+Translations of [4mwhen the time stamp has been lost after a file transfer.[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mwhen the time stamp has been lost after a file transfer.[24m
+    [1m当文件传输后时间戳丢失时。[22m, [1m当时间信息的文件传输后丢失。[22m
+
+-q --quiet
+
+[1m-q  - 安静[22m
+[1m(-Q  - ānjìng)[22m
+
+Translations of [4m-q --quiet[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4m-q --quiet[24m
+    [1m-q  - 安静[22m, [1m-q --quiet[22m
+
+Suppress all warnings.
+
+[1m禁止所有警告。[22m
+[1m(Jìnzhǐ suǒyǒu jǐnggào.)[22m
+
+Translations of [4mSuppress all warnings.[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mSuppress all warnings.[24m
+    [1m禁止所有警告。[22m
+
+-r --recursive
+
+[1m-r  - 递归[22m
+[1m(-R  - dìguī)[22m
+
+Translations of [4m-r --recursive[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4m-r --recursive[24m
+    [1m-r  - 递归[22m, [1m-r --recursive[22m
+
+Travel the directory structure recursively. If any of the file names  specified  on
+
+[1m递归地旅行目录结构。如果有任何指定的文件名[22m
+[1m(Dìguī de lǚxíng mùlù jiégòu. Rúguǒ yǒu rènhé zhǐdìng de wénjiàn míng)[22m
+
+Translations of [4mTravel the directory structure recursively. If any of the file names  specified  on[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mTravel the directory structure recursively.[24m
+    [1m递归地旅行目录结构。[22m, [1m旅行递归目录结构。[22m
+[4mIf any of the file names  specified  on[24m
+    [1m如果有任何指定的文件名[22m, [1m如果有任何文件名的指定上[22m
+
+the command line are directories, gzip will descend into the directory and compress
+
+[1m命令行是目录，gzip将下降到目录并压缩[22m
+[1m(Mìnglìng xíng shì mùlù,gzip jiāng xiàjiàng dào mùlù bìng yāsuō)[22m
+
+Translations of [4mthe command line are directories, gzip will descend into the directory and compress[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mthe command line are directories, gzip will descend into the directory and compress[24m
+    [1m命令行是目录，gzip将下降到目录并压缩[22m, [1m命令行中的目录，gzip将进入目录并压缩[22m
+
+all the files it finds there (or decompress them in the case of gunzip ).
+
+[1m它在那里找到的所有文件（或在gunzip中解压缩它们）。[22m
+[1m(Tā zài nàlǐ zhǎodào de suǒyǒu wénjiàn (huò zài gunzip zhōng jiě yāsuō tāmen).)[22m
+
+Translations of [4mall the files it finds there (or decompress them in the case of gunzip ).[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mall the files it finds there (or decompress them in the case of gunzip ).[24m
+    [1m它在那里找到的所有文件（或在gunzip中解压缩它们）。[22m, [1m所有找到那里的文件（或gunzip解的情况下，解压缩）。[22m
+
+--rsyncable
+
+[1m--rsyncable[22m
+[1m(--Rsyncable)[22m
+
+Translations of [4m--rsyncable[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4m--rsyncable[24m
+    [1m--rsyncable[22m
+
+While compressing, synchronize the output occasionally based on  the  input. This
+
+[1m压缩时，根据输入偶尔同步输出。这个[22m
+[1m(Yāsuō shí, gēnjù shūrù ǒu'ěr tóngbù shūchū. Zhège)[22m
+
+Translations of [4mWhile compressing, synchronize the output occasionally based on  the  input. This[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mWhile compressing, synchronize the output occasionally based on  the  input.[24m
+    [1m压缩时，根据输入偶尔同步输出。[22m, [1m虽然压缩，偶尔同步根据输入输出。[22m
+[4mThis[24m
+    [1m这个[22m, [1m这[22m, [1m本[22m, [1m此[22m
+
+increases  size by less than 1 percent most cases, but means that the rsync(1) pro‐
+
+[1m大多数情况下增加的大小不到1％，但意味着rsync（1）pro-[22m
+[1m(Dà duōshù qíngkuàng xià zēngjiā de dàxiǎo bù dào 1%, dàn yìwèizhe rsync(1)pro-)[22m
+
+Translations of [4mincreases  size by less than 1 percent most cases, but means that the rsync(1) pro‐[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mincreases  size by less than 1 percent most cases, but means that the rsync(1) pro‐[24m
+    [1m大多数情况下增加的大小不到1％，但意味着rsync（1）pro-[22m, [1m不到1％的大多数情况下增加的大小，但意味着rsync的（1）亲[22m
+
+gram can take advantage of similarities in the uncompressed input when synchronized‐
+
+[1mgram可以在同步时利用未压缩输入中的相似性 - [22m
+[1m(Gram kěyǐ zài tóngbù shí lìyòng wèi yāsuō shūrù zhōng de xiāngsì xìng - )[22m
+
+Translations of [4mgram can take advantage of similarities in the uncompressed input when synchronized‐[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mgram can take advantage of similarities in the uncompressed input when synchronized‐[24m
+    [1mgram可以在同步时利用未压缩输入中的相似性 - [22m, [1msynchronized-当克可利用相似性在未压缩输入[22m
+
+ing two files compressed with this flag. gunzip cannot tell the difference between
+
+[1m用这个标志压缩两个文件。 gunzip无法区分[22m
+[1m(Yòng zhège biāozhì yāsuō liǎng gè wénjiàn. Gunzip wúfǎ qūfēn)[22m
+
+Translations of [4ming two files compressed with this flag. gunzip cannot tell the difference between[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4ming two files compressed with this flag.[24m
+    [1m用这个标志压缩两个文件。[22m, [1m荷兰国际集团与该标志压缩两个文件。[22m
+[4mgunzip cannot tell the difference between[24m
+    [1mgunzip无法区分[22m, [1mgunzip解不能告诉之间的区别[22m
+
+a compressed file created with this option, and one created without it.
+
+[1m使用此选项创建的压缩文件，以及没有创建的压缩文件。[22m
+[1m(Shǐyòng cǐ xuǎnxiàng chuàngjiàn de yāsuō wénjiàn, yǐjí méiyǒu chuàngjiàn de yāsuō wénjiàn.)[22m
+
+Translations of [4ma compressed file created with this option, and one created without it.[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4ma compressed file created with this option, and one created without it.[24m
+    [1m使用此选项创建的压缩文件，以及没有创建的压缩文件。[22m, [1m一个压缩文件使用此选项创建，一个没有它创造。[22m
+
+-S .suf --suffix .suf
+
+[1m-S .suf --suffix .suf[22m
+[1m(-S.Suf --suffix.Suf)[22m
+
+Translations of [4m-S .suf --suffix .suf[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4m-S .suf --suffix .suf[24m
+    [1m-S .suf --suffix .suf[22m
+
+When compressing, use suffix .suf instead of .gz. Any  non-empty  suffix  can  be
+
+[1m压缩时，使用后缀.suf而不是.gz。任何非空后缀都可以[22m
+[1m(Yāsuō shí, shǐyòng hòuzhuì.Suf ér bùshì.Gz. Rènhé fēi kōng hòuzhuì dōu kěyǐ)[22m
+
+Translations of [4mWhen compressing, use suffix .suf instead of .gz. Any  non-empty  suffix  can  be[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mWhen compressing, use suffix .suf instead of .gz.[24m
+    [1m压缩时，使用后缀.suf而不是.gz。[22m, [1m当压缩，使用后缀.suf代替。广州的。[22m
+[4mAny  non-empty  suffix  can  be[24m
+    [1m任何非空后缀都可以[22m, [1m任何非空的后缀可以是[22m
+
+given, but suffixes other than .z and .gz should be avoided to avoid confusion when
+
+[1m给定，但应避免使用.z和.gz以外的后缀以避免混淆[22m
+[1m(Gěi dìng, dàn yīng bìmiǎn shǐyòng.Z hé.Gz yǐwài de hòuzhuì yǐ bìmiǎn hùnxiáo)[22m
+
+Translations of [4mgiven, but suffixes other than .z and .gz should be avoided to avoid confusion when[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mgiven, but suffixes other than .z and .gz should be avoided to avoid confusion when[24m
+    [1m给定，但应避免使用.z和.gz以外的后缀以避免混淆[22m, [1m给出，但比.Z后缀等和。广州应避免以避免在混乱[22m
+
+files are transferred to other systems.
+
+[1m文件被传输到其他系统。[22m
+[1m(Wénjiàn bèi chuánshū dào qítā xìtǒng.)[22m
+
+Translations of [4mfiles are transferred to other systems.[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mfiles are transferred to other systems.[24m
+    [1m文件被传输到其他系统。[22m, [1m文件被转移到其他系统。[22m
+
+When decompressing, add .suf to the beginning of the list of suffixes to try,  when
+
+[1m解压缩时，将.suf添加到后缀列表的开头，以尝试何时[22m
+[1m(Jiě yāsuō shí, jiāng.Suf tiānjiā dào hòuzhuì lièbiǎo de kāitóu, yǐ chángshì hé shí)[22m
+
+Translations of [4mWhen decompressing, add .suf to the beginning of the list of suffixes to try,  when[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mWhen decompressing, add .suf to the beginning of the list of suffixes to try,  when[24m
+    [1m解压缩时，将.suf添加到后缀列表的开头，以尝试何时[22m, [1m在解压缩时，.suf添加后缀的列表的开始尝试，当[22m
+
+deriving an output file name from an input file name.
+
+[1m从输入文件名称中导出输出文件名称。[22m
+[1m(Cóng shūrù wénjiàn míngchēng zhōng dǎochū shūchū wénjiàn míngchēng.)[22m
+
+Translations of [4mderiving an output file name from an input file name.[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mderiving an output file name from an input file name.[24m
+    [1m从输入文件名称中导出输出文件名称。[22m, [1m从输入文件名派生的输出文件名。[22m
+
+-t --test
+
+[1m-t --test[22m
+[1m(-T --test)[22m
+
+Translations of [4m-t --test[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4m-t --test[24m
+    [1m-t --test[22m
+
+Test. Check the compressed file integrity.
+
+[1m测试。检查压缩文件的完整性。[22m
+[1m(Cèshì. Jiǎnchá yāsuō wénjiàn de wánzhěng xìng.)[22m
+
+Translations of [4mTest. Check the compressed file integrity.[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mTest.[24m
+    [1m测试。[22m, [1m试验。[22m
+[4mCheck the compressed file integrity.[24m
+    [1m检查压缩文件的完整性。[22m
+
+-v --verbose
+
+[1m-v --verbose[22m
+[1m(-V --verbose)[22m
+
+Translations of [4m-v --verbose[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4m-v --verbose[24m
+    [1m-v --verbose[22m
+
+Verbose. Display  the  name  and  percentage reduction for each file compressed or
+
+[1m详细。显示压缩或压缩的每个文件的名称和缩减百分比[22m
+[1m(Xiángxì. Xiǎnshì yāsuō huò yāsuō de měi gè wénjiàn de míngchēng hé suōjiǎn bǎifēnbǐ)[22m
+
+Translations of [4mVerbose. Display  the  name  and  percentage reduction for each file compressed or[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mVerbose .[24m
+    [1m详细。[22m
+[4mDisplay  the  name  and  percentage reduction for each file compressed or[24m
+    [1m显示压缩或压缩的每个文件的名称和缩减百分比[22m, [1m显示名称和削减百分比压缩每个文件或[22m
+
+decompressed.
+/ˌdēkəmˈpres/
+
+[1m解压缩。[22m
+[1m(Jiě yāsuō.)[22m
+
+Definitions of [4mdecompressed.[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+verb
+[1m    解压缩[22m
+        decompress
+
+[4mdecompressed .[24m
+    [1m解压缩。[22m
+
+-В --версион
+(-V --version)
+
+[1m - 在--version[22m
+[1m( - Zài--version)[22m
+
+Translations of [4m-В --версион[24m
+[ [4mРусский[24m -> [1m简体中文[22m ]
+
+[4m-В[24m
+    [1m - 在[22m, [1m-In[22m
+[4m--версион[24m
+    [1m--version[22m, [1m - 版本[22m
+
+Version. Display the version number and compilation options then quit.
+
+[1m版。显示版本号和编译选项，然后退出。[22m
+[1m(Bǎn. Xiǎnshì bǎnběn hào hé biānyì xuǎnxiàng, ránhòu tuìchū.)[22m
+
+Translations of [4mVersion. Display the version number and compilation options then quit.[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mVersion.[24m
+    [1m版。[22m, [1m版本。[22m
+[4mDisplay the version number and compilation options then quit.[24m
+    [1m显示版本号和编译选项，然后退出。[22m, [1m显示版本号和编译选项然后退出。[22m
+
+-# --fast --best
+
+[1m - ＃--fast  -  best[22m
+[1m( - #--Fast  -  best)[22m
+
+Translations of [4m-# --fast --best[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4m-# --fast --best[24m
+    [1m - ＃--fast  -  best[22m, [1m - ＃--fast --best[22m
+
+Regulate the speed of compression using the specified digit #, where -1  or  --fast
+
+[1m使用指定的数字＃调节压缩速度，其中-1或--fast[22m
+[1m(Shǐyòng zhǐdìng de shùzì#tiáojié yāsuō sùdù, qízhōng-1 huò--fast)[22m
+
+Translations of [4mRegulate the speed of compression using the specified digit #, where -1  or  --fast[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mRegulate the speed of compression using the specified digit #, where -1  or  --fast[24m
+    [1m使用指定的数字＃调节压缩速度，其中-1或--fast[22m, [1m使用指定的位＃，其中-1或--fast调节压缩的速度[22m
+
+indicates the fastest compression method (less compression) and -9 or --best india‐
+
+[1m表示最快的压缩方法（较少压缩）和-9或 - 最好的印度 - [22m
+[1m(Biǎoshì zuì kuài de yāsuō fāngfǎ (jiào shǎo yāsuō) hé-9 huò - zuì hǎo de yìndù - )[22m
+
+Translations of [4mindicates the fastest compression method (less compression) and -9 or --best india‐[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mindicates the fastest compression method (less compression) and -9 or --best india‐[24m
+    [1m表示最快的压缩方法（较少压缩）和-9或 - 最好的印度 - [22m, [1m表示最快的压缩方法（较少压缩）和-9或--best印度 - [22m
+
+cates the slowest compression method (best compression). The  default  compression
+
+[1m表明最慢的压缩方法（最佳压缩）。默认压缩[22m
+[1m(Biǎomíng zuì màn de yāsuō fāngfǎ (zuì jiā yāsuō). Mòrèn yāsuō)[22m
+
+Translations of [4mcates the slowest compression method (best compression). The  default  compression[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mcates the slowest compression method (best compression).[24m
+    [1m表明最慢的压缩方法（最佳压缩）。[22m, [1m凯茨最慢的压缩方法（最佳压缩）。[22m
+[4mThe  default  compression[24m
+    [1m默认压缩[22m, [1m默认的压缩[22m
+
+level is -6 (that is, biased towards high compression at expense of speed).
+
+[1m等级是-6（即，以速度为代价偏向高压缩）。[22m
+[1m(Děngjí shì-6(jí, yǐ sùdù wèi dàijià piānxiàng gāo yāsuō).)[22m
+
+Translations of [4mlevel is -6 (that is, biased towards high compression at expense of speed).[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mlevel is -6 (that is, biased towards high compression at expense of speed).[24m
+    [1m等级是-6（即，以速度为代价偏向高压缩）。[22m, [1m电平为-6（即，偏向以速度为代价高压缩）。[22m
+
+ADVANCED USAGE
+
+[1m先进的用法[22m
+[1m(Xiānjìn de yòngfǎ)[22m
+
+Translations of [4mADVANCED USAGE[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mADVANCED USAGE[24m
+    [1m先进的用法[22m, [1m高级使用[22m
+
+Multiple  compressed files can be concatenated. In this case, gunzip will extract all mem‐
+
+[1m多个压缩文件可以连接在一起。在这种情况下，gunzip将提取所有的mem-[22m
+[1m(Duō gè yāsuō wénjiàn kěyǐ liánjiē zài yīqǐ. Zài zhè zhǒng qíngkuàng xià,gunzip jiāng tíqǔ suǒyǒu de mem-)[22m
+
+Translations of [4mMultiple  compressed files can be concatenated. In this case, gunzip will extract all mem‐[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mMultiple  compressed files can be concatenated.[24m
+    [1m多个压缩文件可以连接在一起。[22m, [1m多个压缩文件可以合并。[22m
+[4mIn this case, gunzip will extract all mem‐[24m
+    [1m在这种情况下，gunzip将提取所有的mem-[22m, [1m在这种情况下，gunzip解将提取所有的MEM[22m
+
+bers at once. For example:
+
+[1m一次性的。例如：[22m
+[1m(Yīcì xìng de. Lìrú:)[22m
+
+Translations of [4mbers at once. For example:[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mbers at once.[24m
+    [1m一次性的。[22m, [1mBER的一次。[22m
+[4mFor example:[24m
+    [1m例如：[22m
+
+gzip -c file1  > foo.gz
+
+[1mgzip -c file1> foo.gz[22m
+[1m(Gzip -c file1> foo.Gz)[22m
+
+Translations of [4mgzip -c file1  > foo.gz[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mgzip -c file1  > foo.gz[24m
+    [1mgzip -c file1> foo.gz[22m, [1mgzip的-c文件file1> foo.gz[22m
+
+gzip -c file2 >> foo.gz
+
+[1mgzip -c file2 >> foo.gz[22m
+[1m(Gzip -c file2 >> foo.Gz)[22m
+
+Translations of [4mgzip -c file2 >> foo.gz[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mgzip -c file2 >> foo.gz[24m
+    [1mgzip -c file2 >> foo.gz[22m, [1mgzip的-c文件2 >> foo.gz[22m
+
+Then
+
+[1m然后[22m
+[1m(Ránhòu)[22m
+
+Translations of [4mThen[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mThen[24m
+    [1m然后[22m
+
+gunzip -c foo
+
+[1mgunzip -c foo[22m
+[1m(Gunzip -c foo)[22m
+
+Translations of [4mgunzip -c foo[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mgunzip -c foo[24m
+    [1mgunzip -c foo[22m, [1mgunzip解-c FOO[22m
+
+is equivalent to
+
+[1m相当于[22m
+[1m(Xiāngdāng yú)[22m
+
+Translations of [4mis equivalent to[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mis equivalent to[24m
+    [1m相当于[22m
+
+cat file1 file2
+
+[1mcat file1 file2[22m
+[1m(Cat file1 file2)[22m
+
+Translations of [4mcat file1 file2[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mcat file1 file2[24m
+    [1mcat file1 file2[22m, [1m猫文件1文件2[22m
+
+In case of damage to one member of a .gz file, other members can still  be  recovered  (if
+
+[1m如果损坏.gz文件的一个成员，其他成员仍然可以恢复（如果[22m
+[1m(Rúguǒ sǔnhuài.Gz wénjiàn de yīgè chéngyuán, qítā chéngyuán réngrán kěyǐ huīfù (rúguǒ)[22m
+
+Translations of [4mIn case of damage to one member of a .gz file, other members can still  be  recovered  (if[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mIn case of damage to one member of a .gz file, other members can still  be  recovered  (if[24m
+    [1m如果损坏.gz文件的一个成员，其他成员仍然可以恢复（如果[22m, [1m在一个.GZ文件中的一个构件损坏的情况下，其他成员仍可以恢复（如果[22m
+
+the damaged member is removed). However, you can get better compression by compressing all
+
+[1m损坏的部件被移除）。但是，您可以通过压缩全部来获得更好的压缩效果[22m
+[1m(Sǔnhuài de bùjiàn bèi yí chú). Dànshì, nín kěyǐ tōngguò yāsuō quánbù lái huòdé gèng hǎo de yāsuō xiàoguǒ)[22m
+
+Translations of [4mthe damaged member is removed). However, you can get better compression by compressing all[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mthe damaged member is removed).[24m
+    [1m损坏的部件被移除）。[22m
+[4mHowever, you can get better compression by compressing all[24m
+    [1m但是，您可以通过压缩全部来获得更好的压缩效果[22m, [1m但是，您可以通过压缩所有得到更好的压缩[22m
+
+members at once:
+
+[1m成员一次：[22m
+[1m(Chéngyuán yīcì:)[22m
+
+Translations of [4mmembers at once:[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mmembers at once:[24m
+    [1m成员一次：[22m, [1m会员一次：[22m
+
+cat file1 file2 | gzip > foo.gz
+
+[1mcat file1 file2 | gzip> foo.gz[22m
+[1m(Cat file1 file2 | gzip> foo.Gz)[22m
+
+Translations of [4mcat file1 file2 | gzip > foo.gz[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mcat file1 file2 |[24m
+    [1mcat file1 file2 |[22m, [1m猫文件1文件2 |[22m
+[4mgzip > foo.gz[24m
+    [1mgzip> foo.gz[22m, [1m的gzip> foo.gz[22m
+
+compresses better than
+
+[1m压缩比[22m
+[1m(Yāsuō bǐ)[22m
+
+Translations of [4mcompresses better than[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mcompresses better than[24m
+    [1m压缩比[22m, [1m压缩比更好[22m
+
+gzip -c file1 file2 > foo.gz
+
+[1mgzip -c file1 file2> foo.gz[22m
+[1m(Gzip -c file1 file2> foo.Gz)[22m
+
+Translations of [4mgzip -c file1 file2 > foo.gz[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mgzip -c file1 file2 > foo.gz[24m
+    [1mgzip -c file1 file2> foo.gz[22m, [1mgzip的-c文件1文件2> foo.gz[22m
+
+If you want to recompress concatenated files to get better compression, do:
+
+[1m如果您想重新压缩串联文件以获得更好的压缩效果，请执行以下操作：[22m
+[1m(Rúguǒ nín xiǎng chóngxīn yāsuō chuànlián wénjiàn yǐ huòdé gèng hǎo de yāsuō xiàoguǒ, qǐng zhíxíng yǐxià cāozuò:)[22m
+
+Translations of [4mIf you want to recompress concatenated files to get better compression, do:[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mIf you want to recompress concatenated files to get better compression, do:[24m
+    [1m如果您想重新压缩串联文件以获得更好的压缩效果，请执行以下操作：[22m, [1m如果你想重新压缩连接起来的文件以获得更好的压缩，这样做：[22m
+
+gzip -cd old.gz | gzip > new.gz
+
+[1mgzip -cd old.gz | gzip> new.gz[22m
+[1m(Gzip -cd old.Gz | gzip> new.Gz)[22m
+
+Translations of [4mgzip -cd old.gz | gzip > new.gz[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mgzip -cd old.gz |[24m
+    [1mgzip -cd old.gz |[22m, [1mgzip的-CD old.gz |[22m
+[4mgzip > new.gz[24m
+    [1mgzip> new.gz[22m, [1m的gzip> new.gz[22m
+
+If a compressed file consists of several members, the uncompressed size and  CRC  reported
+
+[1m如果压缩文件由多个成员组成，则会报告未压缩的大小和CRC[22m
+[1m(Rúguǒ yāsuō wénjiàn yóu duō gè chéngyuán zǔchéng, zé huì bàogào wèi yāsuō de dàxiǎo hé CRC)[22m
+
+Translations of [4mIf a compressed file consists of several members, the uncompressed size and  CRC  reported[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mIf a compressed file consists of several members, the uncompressed size and  CRC  reported[24m
+    [1m如果压缩文件由多个成员组成，则会报告未压缩的大小和CRC[22m, [1m如果一个压缩文件由若干个成员，未压缩的大小和CRC报道[22m
+
+by  the  --list  option applies to the last member only. If you need the uncompressed size
+
+[1m--list选项仅适用于最后一个成员。如果你需要未压缩的大小[22m
+[1m(--List xuǎnxiàng jǐn shìyòng yú zuìhòu yīgè chéngyuán. Rúguǒ nǐ xūyào wèi yāsuō de dàxiǎo)[22m
+
+Translations of [4mby  the  --list  option applies to the last member only. If you need the uncompressed size[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mby  the  --list  option applies to the last member only.[24m
+    [1m--list选项仅适用于最后一个成员。[22m, [1m由--list选项仅适用于最后一个成员。[22m
+[4mIf you need the uncompressed size[24m
+    [1m如果你需要未压缩的大小[22m, [1m如果您需要的未压缩的大小[22m
+
+for all members, you can use:
+
+[1m对于所有成员，您可以使用：[22m
+[1m(Duìyú suǒyǒu chéngyuán, nín kěyǐ shǐyòng:)[22m
+
+Translations of [4mfor all members, you can use:[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mfor all members, you can use:[24m
+    [1m对于所有成员，您可以使用：[22m, [1m所有成员，您可以使用：[22m
+
+gzip -cd file.gz | wc -c
+
+[1mgzip -cd file.gz | wc -c[22m
+[1m(Gzip -cd file.Gz | wc -c)[22m
+
+Translations of [4mgzip -cd file.gz | wc -c[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mgzip -cd file.gz |[24m
+    [1mgzip -cd file.gz |[22m, [1mgzip的-CD file.gz |[22m
+[4mwc -c[24m
+    [1mwc -c[22m
+
+If you wish to create a single archive file with multiple  members  so  that  members  can
+
+[1m如果您希望创建一个包含多个成员的档案文件，以便成员可以[22m
+[1m(Rúguǒ nín xīwàng chuàngjiàn yīgè bāohán duō gè chéngyuán de dǎng'àn wénjiàn, yǐbiàn chéngyuán kěyǐ)[22m
+
+Translations of [4mIf you wish to create a single archive file with multiple  members  so  that  members  can[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mIf you wish to create a single archive file with multiple  members  so  that  members  can[24m
+    [1m如果您希望创建一个包含多个成员的档案文件，以便成员可以[22m, [1m如果你想创建具有多个成员的存档文件，以便会员可以[22m
+
+later be extracted independently, use an archiver such as tar or zip. GNU tar supports the
+
+[1m以后可以独立提取，使用tar或zip等归档文件。 GNU tar支持[22m
+[1m(Yǐhòu kěyǐ dúlì tíqǔ, shǐyòng tar huò zip děng guīdǎng wénjiàn. GNU tar zhīchí)[22m
+
+Translations of [4mlater be extracted independently, use an archiver such as tar or zip. GNU tar supports the[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mlater be extracted independently, use an archiver such as tar or zip.[24m
+    [1m以后可以独立提取，使用tar或zip等归档文件。[22m, [1m后来被独立地提取出来，使用一个归档如焦油或拉链。[22m
+[4mGNU tar supports the[24m
+    [1mGNU tar支持[22m
+
+-z option to invoke gzip transparently. gzip is designed as a complement to tar, not as  a
+
+[1m-z选项透明地调用gzip。 gzip被设计为tar的补充，而不是a[22m
+[1m(-Z xuǎnxiàng tòumíng dì diàoyòng gzip. Gzip bèi shèjì wèi tar de bǔchōng, ér bùshì a)[22m
+
+Translations of [4m-z option to invoke gzip transparently. gzip is designed as a complement to tar, not as  a[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4m-z option to invoke gzip transparently.[24m
+    [1m-z选项透明地调用gzip。[22m, [1m-z选项，可调用的gzip。[22m
+[4mgzip is designed as a complement to tar, not as  a[24m
+    [1mgzip被设计为tar的补充，而不是a[22m, [1mgzip的设计为tar的补充，而不是作为一个[22m
+
+replacement.
+/riˈplāsmənt/
+
+[1m替代。[22m
+[1m(Tìdài.)[22m
+
+Definitions of [4mreplacement.[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+noun
+[1m    复位[22m
+        restoration, reposition, replacement, diaplasis
+[1m    配件[22m
+        fitting, replacement
+[1m    替身[22m
+        substitute, replacement, scapegoat, stand-in
+[1m    替补员[22m
+        replacement, reserve, spare, sub, substitute
+[1m    条施[22m
+        replacement
+
+[4mreplacement.[24m
+    [1m替代。[22m, [1m替换。[22m, [1m更换。[22m
+
+ENVIRONMENT
+/-ˈvī(ə)rn-,enˈvīrənmənt/
+
+[1m环境[22m
+[1m(Huánjìng)[22m
+
+Definitions of [4mENVIRONMENT[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+noun
+[1m    环境[22m
+        environment, setting, condition, circumstance, surrounding, ambience
+[1m    周围[22m
+        surrounding, environment
+[1m    生活环境[22m
+        environment, surrounding
+
+[4mENVIRONMENT[24m
+    [1m环境[22m
+
+The  environment  variable GZIP can hold a set of default options for gzip. These options
+
+[1m环境变量GZIP可以为gzip保存一组默认选项。这些选项[22m
+[1m(Huánjìng biànliàng GZIP kěyǐ wéi gzip bǎocún yī zǔ mòrèn xuǎnxiàng. Zhèxiē xuǎnxiàng)[22m
+
+Translations of [4mThe  environment  variable GZIP can hold a set of default options for gzip. These options[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mThe  environment  variable GZIP can hold a set of default options for gzip.[24m
+    [1m环境变量GZIP可以为gzip保存一组默认选项。[22m, [1m环境变量GZIP能够控制一系列gzip的缺省选项。[22m
+[4mThese options[24m
+    [1m这些选项[22m
+
+are interpreted first and can be overwritten by  explicit  command  line  parameters. For
+
+[1m首先被解释并且可以被显式的命令行参数覆盖。对于[22m
+[1m(Shǒuxiān bèi jiěshì bìngqiě kěyǐ bèi xiǎn shì de mìnglìng xíng cānshù fùgài. Duìyú)[22m
+
+Translations of [4mare interpreted first and can be overwritten by  explicit  command  line  parameters. For[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mare interpreted first and can be overwritten by  explicit  command  line  parameters.[24m
+    [1m首先被解释并且可以被显式的命令行参数覆盖。[22m, [1m首先解释，并且可以通过明确的命令行参数被重写。[22m
+[4mFor[24m
+    [1m对于[22m, [1m为[22m
+
+example:
+/igˈzampəl/
+
+[1m例：[22m
+[1m(Lì:)[22m
+
+Definitions of [4mexample:[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+noun
+[1m    例[22m
+        example, case, instance, regulation, precedent, rule
+[1m    例子[22m
+        example, case, instance
+[1m    范例[22m
+        example, paradigm, model, exemplification, pattern
+[1m    榜样[22m
+        example, model, pattern, exemplar, sample, prototype
+[1m    典范[22m
+        model, example
+[1m    例证[22m
+        illustration, example, case
+[1m    事例[22m
+        case, example, instance
+[1m    表率[22m
+        example, model
+[1m    例题[22m
+        example
+[1m    表[22m
+        table, list, meter, watch, surface, example
+[1m    模范[22m
+        model, example, exemplar, paragon, pattern, paradigm
+[1m    标兵[22m
+        model, pacesetter, example, parade guards
+[1m    譬[22m
+        analogy, example
+[1m    范[22m
+        model, limits, pattern, example
+[1m    样子[22m
+        appearance, looks, manner, shape, aspect, example
+[1m    标杆[22m
+        model, example, surveyor's pole
+[1m    鉴[22m
+        warning, mirror, ancient bronze mirror, reflection, reflexion, example
+[1m    法[22m
+        law, France, way, rule, dharma, example
+[1m    训[22m
+        instruction, example, pattern
+[1m    师[22m
+        division, teacher, master, expert, example, model
+
+[4mexample:[24m
+    [1m例：[22m, [1m例子：[22m, [1m例如：[22m
+
+for sh:    GZIP="-8v --name"; export GZIP
+
+[1m对于sh：GZIP =“ -  8v --name”;出口GZIP[22m
+[1m(Duìyú sh:GZIP =“ -  8v --name”; chūkǒu GZIP)[22m
+
+Translations of [4mfor sh:    GZIP="-8v --name"; export GZIP[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mfor sh:    GZIP="-8v --name";[24m
+    [1m对于sh：GZIP =“ -  8v --name”;[22m, [1m在sh：GZIP = “ -  8V --name”;[22m
+[4mexport GZIP[24m
+    [1m出口GZIP[22m
+
+for csh:   setenv GZIP "-8v --name"
+
+[1m对于csh：setenv GZIP“-8v --name”[22m
+[1m(Duìyú csh:Setenv GZIP“-8v --name”)[22m
+
+Translations of [4mfor csh:   setenv GZIP "-8v --name"[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mfor csh:   setenv GZIP "-8v --name"[24m
+    [1m对于csh：setenv GZIP“-8v --name”[22m, [1m对csh：SETENV GZIP “-8V --name”[22m
+
+for MSDOS: set GZIP=-8v --name
+
+[1m对于MSDOS：设置GZIP = -8v --name[22m
+[1m(Duìyú MSDOS: Shèzhì GZIP = -8v --name)[22m
+
+Translations of [4mfor MSDOS: set GZIP=-8v --name[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mfor MSDOS: set GZIP=-8v --name[24m
+    [1m对于MSDOS：设置GZIP = -8v --name[22m
+
+On Vax/VMS, the name of the environment variable is GZIP_OPT, to avoid a conflict with the
+
+[1m在Vax / VMS上，环境变量的名称是GZIP_OPT，以避免与[22m
+[1m(Zài Vax/ VMS shàng, huánjìng biànliàng de míngchēng shì GZIP_OPT, yǐ bìmiǎn yǔ)[22m
+
+Translations of [4mOn Vax/VMS, the name of the environment variable is GZIP_OPT, to avoid a conflict with the[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mOn Vax/VMS, the name of the environment variable is GZIP_OPT, to avoid a conflict with the[24m
+    [1m在Vax / VMS上，环境变量的名称是GZIP_OPT，以避免与[22m, [1m在VAX / VMS，环境变量的名称是GZIP_OPT，避免与冲突[22m
+
+symbol set for invocation of the program.
+
+[1m为调用程序设置的符号。[22m
+[1m(Wèi diàoyòng chéngxù shèzhì de fúhào.)[22m
+
+Translations of [4msymbol set for invocation of the program.[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4msymbol set for invocation of the program.[24m
+    [1m为调用程序设置的符号。[22m, [1m符号调用该程序的设置。[22m
+
+SEE ALSO
+
+[1m也可以看看[22m
+[1m(Yě kěyǐ kàn kàn)[22m
+
+Definitions of [4mSEE ALSO[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+verb
+[1m    参见[22m
+        see also, pay one's respects to
+[1m    参看[22m
+        see also, consult, read for reference
+
+[4mSEE ALSO[24m
+    [1m也可以看看[22m, [1m参见[22m, [1m还请参见[22m, [1m另请参阅[22m
+
+new(1), zcrp(1), zmore(1), zforce(1), gzexe(1), zip(1), unzip(1), compress(1)
+
+[1m新（1），zcrp（1），zmore（1），zforce（1），gzexe（1），zip（1），unzip（1），compress（1）[22m
+[1m(Xīn (1),zcrp(1),zmore(1),zforce(1),gzexe(1),zip(1),unzip(1),compress(1))[22m
+
+Translations of [4mnew(1), zcrp(1), zmore(1), zforce(1), gzexe(1), zip(1), unzip(1), compress(1)[24m
+[ [4mSlovenščina[24m -> [1m简体中文[22m ]
+
+[4mnew(1), zcrp(1), zmore(1), zforce(1), gzexe(1), zip(1), unzip(1), compress(1)[24m
+    [1m新（1），zcrp（1），zmore（1），zforce（1），gzexe（1），zip（1），unzip（1），compress（1）[22m, [1m新的（1）TRP（1），能够（1），力（1），gzexe（1）的拉链（1）解压缩（1）中，压缩（1）[22m
+
+The gzip file format is specified in P. Deutsch, GZIP file  format  specification  version
+
+[1mgzip文件格式在P. Deutsch，GZIP文件格式规范版本中指定[22m
+[1m(Gzip wénjiàn géshì zài P. Deutsch,GZIP wénjiàn géshì guīfàn bǎnběn zhōng zhǐdìng)[22m
+
+Translations of [4mThe gzip file format is specified in P. Deutsch, GZIP file  format  specification  version[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mThe gzip file format is specified in P. Deutsch, GZIP file  format  specification  version[24m
+    [1mgzip文件格式在P. Deutsch，GZIP文件格式规范版本中指定[22m, [1mgzip文件格式在P.德语规定，GZIP文件格式规范版本[22m
+
+4.3,  <http://www.ietf.org/rfc/rfc1952.txt>, Internet RFC 1952 (May 1996). The zip defla‐
+
+[1m4.3，<http://www.ietf.org/rfc/rfc1952.txt>，Internet RFC 1952（1996年5月）。拉链defla-[22m
+[1m(4.3,<Http://Www.Ietf.Org/rfc/rfc1952.Txt>,Internet RFC 1952(1996 nián 5 yuè). Lāliàn defla-)[22m
+
+Translations of [4m4.3,  <http://www.ietf.org/rfc/rfc1952.txt>, Internet RFC 1952 (May 1996). The zip defla‐[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4m4.3,  <http://www.ietf.org/rfc/rfc1952.txt>, Internet RFC 1952 (May 1996).[24m
+    [1m4.3，<http://www.ietf.org/rfc/rfc1952.txt>，Internet RFC 1952（1996年5月）。[22m, [1m4.3，<http://www.ietf.org/rfc/rfc1952.txt>，因特网RFC 1952（1996年5月）。[22m
+[4mThe zip defla‐[24m
+    [1m拉链defla-[22m
+
+tion format is specified in P. Deutsch, DEFLATE Compressed Data Format Specification  ver‐
+
+[1m格式在P. Deutsch中指定，DEFLATE压缩数据格式规范ver-[22m
+[1m(Géshì zài P. Deutsch zhōng zhǐdìng,DEFLATE yāsuō shùjù géshì guīfàn ver-)[22m
+
+Translations of [4mtion format is specified in P. Deutsch, DEFLATE Compressed Data Format Specification  ver‐[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mtion format is specified in P. Deutsch, DEFLATE Compressed Data Format Specification  ver‐[24m
+    [1m格式在P. Deutsch中指定，DEFLATE压缩数据格式规范ver-[22m, [1m和灰格式在P.德语指定，DEFLATE压缩数据格式规范版本 - [22m
+
+sion 1.3, <http://www.ietf.org/rfc/rfc1951.txt>, Internet RFC 1951 (May 1996).
+
+[1msion 1.3，<http://www.ietf.org/rfc/rfc1951.txt>，Internet RFC 1951（1996年5月）。[22m
+[1m(Sion 1.3,<Http://Www.Ietf.Org/rfc/rfc1951.Txt>,Internet RFC 1951(1996 nián 5 yuè).)[22m
+
+Translations of [4msion 1.3, <http://www.ietf.org/rfc/rfc1951.txt>, Internet RFC 1951 (May 1996).[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4msion 1.3, <http://www.ietf.org/rfc/rfc1951.txt>, Internet RFC 1951 (May 1996).[24m
+    [1msion 1.3，<http://www.ietf.org/rfc/rfc1951.txt>，Internet RFC 1951（1996年5月）。[22m, [1m锡永1.3，<http://www.ietf.org/rfc/rfc1951.txt>，因特网RFC 1951（1996年5月）。[22m
+
+DIAGNOSTICS
+
+[1m诊断[22m
+[1m(Zhěnduàn)[22m
+
+Definitions of [4mDIAGNOSTICS[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+noun
+[1m    病的征候[22m
+        diagnostic
+
+[4mDIAGNOSTICS[24m
+    [1m诊断[22m, [1mDIAGNOSTICS[22m, [1m诊断信息[22m, [1m诊断学[22m
+
+Exit status is normally 0; if an error occurs, exit status is 1. If a warning occurs, exit
+
+[1m退出状态通常为0;如果发生错误，则退出状态为1.如果发生警告，请退出[22m
+[1m(Tuìchū zhuàngtài tōngcháng wèi 0; rúguǒ fāshēng cuòwù, zé tuìchū zhuàngtài wèi 1. Rúguǒ fāshēng jǐnggào, qǐng tuìchū)[22m
+
+Translations of [4mExit status is normally 0; if an error occurs, exit status is 1. If a warning occurs, exit[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mExit status is normally 0;[24m
+    [1m退出状态通常为0;[22m, [1m退出状态通常是0;[22m
+[4mif an error occurs, exit status is 1. If a warning occurs, exit[24m
+    [1m如果发生错误，则退出状态为1.如果发生警告，请退出[22m, [1m如果出现错误，退出状态为1.如果出现警告，退出[22m
+
+status is 2.
+
+[1m状态是2。[22m
+[1m(Zhuàngtài shì 2.)[22m
+
+Translations of [4mstatus is 2.[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mstatus is 2.[24m
+    [1m状态是2。[22m, [1m状态为2。[22m
+
+Usage: gzip [-cdfhklLnNrtvV19] [-S suffix] [file ...]
+
+[1m用法：gzip [-cdfhklLnNrtvV19] [-S后缀] [文件...][22m
+[1m(Yòngfǎ:Gzip [-cdfhklLnNrtvV19] [-S hòuzhuì] [wénjiàn...])[22m
+
+Translations of [4mUsage: gzip [-cdfhklLnNrtvV19] [-S suffix] [file ...][24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mUsage: gzip [-cdfhklLnNrtvV19] [-S suffix] [file ...][24m
+    [1m用法：gzip [-cdfhklLnNrtvV19] [-S后缀] [文件...][22m, [1m用法：gzip的[-cdfhklLnNrtvV19] [-S后缀] [文件...][22m
+
+Invalid options were specified on the command line.
+
+[1m命令行中指定了无效的选项。[22m
+[1m(Mìnglìng xíng zhōng zhǐ dìng liǎo wúxiào de xuǎnxiàng.)[22m
+
+Translations of [4mInvalid options were specified on the command line.[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mInvalid options were specified on the command line.[24m
+    [1m命令行中指定了无效的选项。[22m, [1m无效的选项在命令行上指定。[22m
+
+file: not in gzip format
+
+[1m文件：不是gzip格式[22m
+[1m(Wénjiàn: Bùshì gzip géshì)[22m
+
+Translations of [4mfile: not in gzip format[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mfile: not in gzip format[24m
+    [1m文件：不是gzip格式[22m, [1m文件：不在gzip格式[22m
+
+The file specified to gunzip has not been compressed.
+
+[1m指定给gunzip的文件尚未压缩。[22m
+[1m(Zhǐdìng gěi gunzip de wénjiàn shàngwèi yāsuō.)[22m
+
+Translations of [4mThe file specified to gunzip has not been compressed.[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mThe file specified to gunzip has not been compressed.[24m
+    [1m指定给gunzip的文件尚未压缩。[22m, [1m指定gunzip解的文件没有被压缩。[22m
+
+file: Corrupt input. Use zcat to recover some data.
+
+[1m文件：损坏的输入。使用zcat来恢复一些数据。[22m
+[1m(Wénjiàn: Sǔnhuài de shūrù. Shǐyòng zcat lái huīfù yīxiē shùjù.)[22m
+
+Translations of [4mfile: Corrupt input. Use zcat to recover some data.[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mfile: Corrupt input.[24m
+    [1m文件：损坏的输入。[22m, [1m文件：腐败的输入。[22m
+[4mUse zcat to recover some data.[24m
+    [1m使用zcat来恢复一些数据。[22m, [1m使用ZCAT恢复一些数据。[22m
+
+The compressed file has been damaged. The data up to the point of  failure  can  be
+
+[1m压缩文件已损坏。直到故障点的数据都可以[22m
+[1m(Yāsuō wénjiàn yǐ sǔnhuài. Zhídào gùzhàng diǎn de shùjù dōu kěyǐ)[22m
+
+Translations of [4mThe compressed file has been damaged. The data up to the point of  failure  can  be[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mThe compressed file has been damaged.[24m
+    [1m压缩文件已损坏。[22m
+[4mThe data up to the point of  failure  can  be[24m
+    [1m直到故障点的数据都可以[22m, [1m数据高达故障点可能[22m
+
+recovered using
+
+[1m使用恢复[22m
+[1m(Shǐyòng huīfù)[22m
+
+Translations of [4mrecovered using[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mrecovered using[24m
+    [1m使用恢复[22m, [1m使用回收[22m
+
+zcat file > recover
+
+[1mzcat文件>恢复[22m
+[1m(Zcat wénjiàn >huīfù)[22m
+
+Translations of [4mzcat file > recover[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mzcat file > recover[24m
+    [1mzcat文件>恢复[22m, [1m用zcat文件>恢复[22m
+
+file: compressed with xx bits, can only handle yy bits
+
+[1m文件：用xx位压缩，只能处理yy位[22m
+[1m(Wénjiàn: Yòng xx wèi yāsuō, zhǐ néng chǔlǐ yy wèi)[22m
+
+Translations of [4mfile: compressed with xx bits, can only handle yy bits[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mfile: compressed with xx bits, can only handle yy bits[24m
+    [1m文件：用xx位压缩，只能处理yy位[22m, [1m文件：用XX位的压缩，只能处理yy的位[22m
+
+File  was  compressed  (using LZW) by a program that could deal with more bits than
+
+[1m文件被压缩（使用LZW）的程序可以处理更多的比特[22m
+[1m(Wénjiàn bèi yāsuō (shǐyòng LZW) de chéngxù kěyǐ chǔlǐ gèng duō de bǐtè)[22m
+
+Translations of [4mFile  was  compressed  (using LZW) by a program that could deal with more bits than[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mFile  was  compressed  (using LZW) by a program that could deal with more bits than[24m
+    [1m文件被压缩（使用LZW）的程序可以处理更多的比特[22m, [1m文件被认为可以处理超过位的程序压缩（LZW使用）[22m
+
+the decompress code on this machine. Recompress the file  with  gzip,  which  com‐
+
+[1m这台机器上的解压缩代码。用gzip重新压缩文件，其中com-[22m
+[1m(Zhè tái jīqì shàng de jiě yāsuō dàimǎ. Yòng gzip chóngxīn yāsuō wénjiàn, qízhōng com-)[22m
+
+Translations of [4mthe decompress code on this machine. Recompress the file  with  gzip,  which  com‐[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mthe decompress code on this machine.[24m
+    [1m这台机器上的解压缩代码。[22m, [1m这台机器上的代码解压缩。[22m
+[4mRecompress the file  with  gzip,  which  com‐[24m
+    [1m用gzip重新压缩文件，其中com-[22m, [1m重新压缩用gzip的文件，该文件的COM[22m
+
+presses better and uses less memory.
+
+[1m压力更好，使用更少的内存。[22m
+[1m(Yālì gēng hǎo, shǐyòng gèng shǎo de nèicún.)[22m
+
+Translations of [4mpresses better and uses less memory.[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mpresses better and uses less memory.[24m
+    [1m压力更好，使用更少的内存。[22m, [1m按下更好，使用更少的内存。[22m
+
+file: already has .gz suffix -- no change
+
+[1m文件：已经有.gz后缀 - 没有变化[22m
+[1m(Wénjiàn: Yǐjīng yǒu.Gz hòuzhuì - méiyǒu biànhuà)[22m
+
+Translations of [4mfile: already has .gz suffix -- no change[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mfile: already has .gz suffix -- no change[24m
+    [1m文件：已经有.gz后缀 - 没有变化[22m, [1m文件：已经拥有的.gz后缀 - 无变化[22m
+
+The file is assumed to be already compressed. Rename the file and try again.
+
+[1m该文件假定已经被压缩。重命名文件并重试。[22m
+[1m(Gāi wénjiàn jiǎdìng yǐjīng bèi yāsuō. Zhòng mìngmíng wénjiàn bìng chóng shì.)[22m
+
+Translations of [4mThe file is assumed to be already compressed. Rename the file and try again.[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mThe file is assumed to be already compressed.[24m
+    [1m该文件假定已经被压缩。[22m, [1m假设该文件将已经压缩。[22m
+[4mRename the file and try again.[24m
+    [1m重命名文件并重试。[22m, [1m重命名文件，然后再试一次。[22m
+
+file already exists; do you wish to overwrite (y or n)?
+
+[1m文件已存在;你想覆盖（y或n）吗？[22m
+[1m(Wénjiàn yǐ cúnzài; nǐ xiǎng fùgài (y huò n) ma?)[22m
+
+Translations of [4mfile already exists; do you wish to overwrite (y or n)?[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mfile already exists;[24m
+    [1m文件已存在;[22m, [1m文件已经存在;[22m
+[4mdo you wish to overwrite (y or n)?[24m
+    [1m你想覆盖（y或n）吗？[22m, [1m你想覆盖（y或n）？[22m
+
+Respond "y" if you want the output file to be replaced; "n" if not.
+
+[1m如果您希望替换输出文件，请回复“y”; “n”如果不是。[22m
+[1m(Rúguǒ nín xīwàng tìhuàn shūchū wénjiàn, qǐng huífù “y”; “n” rúguǒ bùshì.)[22m
+
+Translations of [4mRespond "y" if you want the output file to be replaced; "n" if not.[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mRespond "y" if you want the output file to be replaced;[24m
+    [1m如果您希望替换输出文件，请回复“y”;[22m, [1m如果你想更换输出文件响应“Y”;[22m
+[4m"n" if not.[24m
+    [1m“n”如果不是。[22m
+
+gunzip: corrupt input
+
+[1mgunzip：腐败的输入[22m
+[1m(Gunzip: Fǔbài de shūrù)[22m
+
+Translations of [4mgunzip: corrupt input[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mgunzip: corrupt input[24m
+    [1mgunzip：腐败的输入[22m, [1mgunzip解：腐败的输入[22m
+
+A  SIGSEGV  violation was detected which usually means that the input file has been
+
+[1m检测到SIGSEGV违规，通常意味着输入文件已被删除[22m
+[1m(Jiǎncè dào SIGSEGV wéiguī, tōngcháng yìwèizhe shūrù wénjiàn yǐ bèi shānchú)[22m
+
+Translations of [4mA  SIGSEGV  violation was detected which usually means that the input file has been[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mA  SIGSEGV  violation was detected which usually means that the input file has been[24m
+    [1m检测到SIGSEGV违规，通常意味着输入文件已被删除[22m, [1m检测，这通常意味着该输入文件已经违反SIGSEGV[22m
+
+corrupted.
+
+[1m损坏。[22m
+[1m(Sǔnhuài.)[22m
+
+Definitions of [4mcorrupted.[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+verb
+[1m    败坏[22m
+        corrupt, ruin, undermine
+[1m    腐化[22m
+        corrupt, decompose
+[1m    腐蚀[22m
+        corrode, erode, corrupt, rust, rot, canker
+[1m    腐[22m
+        decay, corrupt
+[1m    腐烂[22m
+        rot, decay, decompose, corrupt, perish, putrefy
+
+[4mcorrupted .[24m
+    [1m损坏。[22m
+
+xx.x% Percentage of the input saved by compression.
+
+[1mxx.x％通过压缩保存的输入百分比。[22m
+[1m(Xx.X%tōngguò yāsuō bǎocún de shūrù bǎifēnbǐ.)[22m
+
+Translations of [4mxx.x% Percentage of the input saved by compression.[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mxx.x% Percentage of the input saved by compression.[24m
+    [1mxx.x％通过压缩保存的输入百分比。[22m, [1mXX.X％压缩节省输入的百分比。[22m
+
+(Relevant only for -v and -l.)
+
+[1m（仅与-v和-l相关）[22m
+[1m((Jǐn yǔ-v hé-l xiāngguān))[22m
+
+Translations of [4m(Relevant only for -v and -l.)[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4m(Relevant only for -v and -l.)[24m
+    [1m（仅与-v和-l相关）[22m, [1m（仅适用于-v和-l相关。）[22m
+
+-- not a regular file or directory: ignored
+
+[1m - 不是常规文件或目录：忽略[22m
+[1m( - Bùshì chángguī wénjiàn huò mùlù: Hūlüè)[22m
+
+Translations of [4m-- not a regular file or directory: ignored[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4m-- not a regular file or directory: ignored[24m
+    [1m - 不是常规文件或目录：忽略[22m, [1m - 不是普通文件或目录：忽略[22m
+
+When the input file is not a regular file or  directory,  (e.g.  a  symbolic  link,
+
+[1m当输入文件不是常规文件或目录时（例如符号链接，[22m
+[1m(Dāng shūrù wénjiàn bùshì chángguī wénjiàn huò mùlù shí (lìrú fúhào liànjiē,)[22m
+
+Translations of [4mWhen the input file is not a regular file or  directory,  (e.g.  a  symbolic  link,[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mWhen the input file is not a regular file or  directory,  (e.g.  a  symbolic  link,[24m
+    [1m当输入文件不是常规文件或目录时（例如符号链接，[22m, [1m当输入文件不是常规文件或目录，（例如一个符号链接，[22m
+
+socket, FIFO, device file), it is left unaltered.
+
+[1m插座，FIFO，设备文件），它保持不变。[22m
+[1m(Chāzuò,FIFO, shèbèi wénjiàn), tā bǎochí bù biàn.)[22m
+
+Translations of [4msocket, FIFO, device file), it is left unaltered.[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4msocket, FIFO, device file), it is left unaltered.[24m
+    [1m插座，FIFO，设备文件），它保持不变。[22m, [1m插座，FIFO，设备文件），它是保持不变。[22m
+
+-- has xx other links: unchanged
+
+[1m - 有xx其他链接：不变[22m
+[1m( - Yǒu xx qítā liànjiē: Bù biàn)[22m
+
+Translations of [4m-- has xx other links: unchanged[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4m-- has xx other links: unchanged[24m
+    [1m - 有xx其他链接：不变[22m, [1m - 有XX其他链接：未变[22m
+
+The  input  file  has links; it is left unchanged. See ln(1) for more information.
+
+[1m输入文件有链接;它保持不变。有关更多信息，请参阅ln（1）。[22m
+[1m(Shūrù wénjiàn yǒu liànjiē; tā bǎochí bù biàn. Yǒuguān gèng duō xìnxī, qǐng cānyuè ln(1).)[22m
+
+Translations of [4mThe  input  file  has links; it is left unchanged. See ln(1) for more information.[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mThe  input  file  has links;[24m
+    [1m输入文件有链接;[22m, [1m输入文件的链接;[22m
+[4mit is left unchanged.[24m
+    [1m它保持不变。[22m
+[4mSee ln(1) for more information.[24m
+    [1m有关更多信息，请参阅ln（1）。[22m, [1m更多信息请参见LN（1）。[22m
+
+Use the -f flag to force compression of multiply-linked files.
+
+[1m使用-f标志来强制压缩多重链接的文件。[22m
+[1m(Shǐyòng-f biāozhì lái qiángzhì yāsuō duōchóng liànjiē de wénjiàn.)[22m
+
+Translations of [4mUse the -f flag to force compression of multiply-linked files.[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mUse the -f flag to force compression of multiply-linked files.[24m
+    [1m使用-f标志来强制压缩多重链接的文件。[22m, [1m使用-f标志来强制的多重链接的文件压缩。[22m
+
+CAVEATS
+
+[1mCAVEATS[22m
+[1m(CAVEATS)[22m
+
+Translations of [4mCAVEATS[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mCAVEATS[24m
+    [1mCAVEATS[22m, [1m忠告以下[22m
+
+When writing compressed data to a tape, it is generally necessary to pad the  output  with
+
+[1m将压缩数据写入磁带时，通常需要使用填充输出[22m
+[1m(Jiāng yāsuō shùjù xiě rù cídài shí, tōngcháng xūyào shǐyòng tiánchōng shūchū)[22m
+
+Translations of [4mWhen writing compressed data to a tape, it is generally necessary to pad the  output  with[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mWhen writing compressed data to a tape, it is generally necessary to pad the  output  with[24m
+    [1m将压缩数据写入磁带时，通常需要使用填充输出[22m, [1m当将压缩数据写入到磁带时，通常必须垫的输出与[22m
+
+zeroes up to a block boundary. When the data is read and the whole block is passed to gun‐
+
+[1m归零到块边界。当数据被读取并且整个块被传递给枪 - [22m
+[1m(Guī líng dào kuài biānjiè. Dāng shùjù bèi dòu qǔ bìngqiě zhěnggè kuài bèi chuándì gěi qiāng - )[22m
+
+Translations of [4mzeroes up to a block boundary. When the data is read and the whole block is passed to gun‐[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mzeroes up to a block boundary.[24m
+    [1m归零到块边界。[22m
+[4mWhen the data is read and the whole block is passed to gun‐[24m
+    [1m当数据被读取并且整个块被传递给枪 - [22m, [1m当数据被读取，并且整个块被传递给gun-[22m
+
+zip for decompression, gunzip detects that there is extra trailing garbage after the  com‐
+
+[1mzip解压缩，gunzip检测到com-[22m
+[1m(Zip jiě yāsuō,gunzip jiǎncè dào com-)[22m
+
+Translations of [4mzip for decompression, gunzip detects that there is extra trailing garbage after the  com‐[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mzip for decompression, gunzip detects that there is extra trailing garbage after the  com‐[24m
+    [1mzip解压缩，gunzip检测到com-[22m, [1m邮政编码为解压时，gunzip能检测到有多余的尾随垃圾COM的后[22m
+
+pressed  data  and  emits a warning by default. You have to use the --quiet option to sup‐
+
+[1m按下数据并默认发出警告。你必须使用--quiet选项来支持 - [22m
+[1m(Àn xià shùjù bìng mòrèn fāchū jǐnggào. Nǐ bìxū shǐyòng--quiet xuǎnxiàng lái zhīchí - )[22m
+
+Translations of [4mpressed  data  and  emits a warning by default. You have to use the --quiet option to sup‐[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mpressed  data  and  emits a warning by default.[24m
+    [1m按下数据并默认发出警告。[22m, [1m按下数据并发出默认警告。[22m
+[4mYou have to use the --quiet option to sup‐[24m
+    [1m你必须使用--quiet选项来支持 - [22m, [1m你必须使用--quiet选项燮[22m
+
+press the warning. This option can be set in the GZIP environment variable as in:
+
+[1m按下警告。该选项可以在GZIP环境变量中设置，如下所示：[22m
+[1m(Àn xià jǐnggào. Gāi xuǎnxiàng kěyǐ zài GZIP huánjìng biànliàng zhōng shèzhì, rúxià suǒ shì:)[22m
+
+Translations of [4mpress the warning. This option can be set in the GZIP environment variable as in:[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mpress the warning.[24m
+    [1m按下警告。[22m, [1m按警告。[22m
+[4mThis option can be set in the GZIP environment variable as in:[24m
+    [1m该选项可以在GZIP环境变量中设置，如下所示：[22m, [1m此选项可在GZIP环境变量中设置：[22m
+
+for sh:  GZIP="-q"  tar -xfz --block-compress /dev/rst0
+
+[1m对于sh：GZIP =“ -  q”tar -xfz --block-compress / dev / rst0[22m
+[1m(Duìyú sh:GZIP =“ -  q”tar -xfz --block-compress/ dev/ rst0)[22m
+
+Translations of [4mfor sh:  GZIP="-q"  tar -xfz --block-compress /dev/rst0[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mfor sh:  GZIP="-q"  tar -xfz --block-compress /dev/rst0[24m
+    [1m对于sh：GZIP =“ -  q”tar -xfz --block-compress / dev / rst0[22m, [1m在sh：GZIP = “ -  Q” 焦油-xfz --block-压缩的/ dev / RST0[22m
+
+for csh: (setenv GZIP -q; tar -xfz --block-compr /dev/rst0
+
+[1m对于csh：（setenv GZIP -q; tar -xfz --block-compr / dev / rst0[22m
+[1m(Duìyú csh:(Setenv GZIP -q; tar -xfz --block-compr/ dev/ rst0)[22m
+
+Translations of [4mfor csh: (setenv GZIP -q; tar -xfz --block-compr /dev/rst0[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mfor csh: (setenv GZIP -q; tar -xfz --block-compr /dev/rst0[24m
+    [1m对于csh：（setenv GZIP -q; tar -xfz --block-compr / dev / rst0[22m, [1m对csh：（SETENV GZIP -q;焦油-xfz --block-COMPR的/ dev / RST0[22m
+
+In the above example, gzip is invoked implicitly by the -z option of GNU  tar. Make sure
+
+[1m在上面的例子中，gzip是由GNU tar的-z选项隐式调用的。确保[22m
+[1m(Zài shàngmiàn de lìzi zhōng,gzip shì yóu GNU tar de-z xuǎnxiàng yǐn shì diàoyòng de. Quèbǎo)[22m
+
+Translations of [4mIn the above example, gzip is invoked implicitly by the -z option of GNU  tar. Make sure[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mIn the above example, gzip is invoked implicitly by the -z option of GNU  tar.[24m
+    [1m在上面的例子中，gzip是由GNU tar的-z选项隐式调用的。[22m, [1m在上述例子中，gzip的由GNU焦油的-z选项隐含地调用。[22m
+[4mMake  sure[24m
+    [1m确保[22m, [1m确定[22m
+
+that  the  same  block  size (-b option of tar) is used for reading and writing compressed
+
+[1m相同的块大小（焦油的-b选项）用于读取和写入压缩[22m
+[1m(Xiāngtóng de kuài dàxiǎo (jiāoyóu de-b xuǎnxiàng) yòng yú dòu qǔ hé xiě rù yāsuō)[22m
+
+Translations of [4mthat  the  same  block  size (-b option of tar) is used for reading and writing compressed[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mthat  the  same  block  size (-b option of tar) is used for reading and writing compressed[24m
+    [1m相同的块大小（焦油的-b选项）用于读取和写入压缩[22m, [1m该相同的块大小（焦油的-b选项）被用于读出和写入压缩[22m
+
+data on tapes. (This example assumes you are using the GNU version of tar.)
+
+[1m磁带上的数据。 （这个例子假设你使用的是GNU版本的tar。）[22m
+[1m(Cídài shàng de shùjù. (Zhège lìzi jiǎshè nǐ shǐyòng de shì GNU bǎnběn de tar.))[22m
+
+Translations of [4mdata on tapes. (This example assumes you are using the GNU version of tar.)[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mdata on tapes.[24m
+    [1m磁带上的数据。[22m, [1m在磁带上的数据。[22m
+[4m(This example assumes you are using the GNU version of tar.)[24m
+    [1m（这个例子假设你使用的是GNU版本的tar。）[22m, [1m（这个例子假定您使用tar的GNU版本。）[22m
+
+BUGS
+
+[1mBUGS[22m
+[1m(BUGS)[22m
+
+Definitions of [4mBUGS[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+adjective
+[1m    疯狂[22m
+        mad, wild, crazed, raving, bugs, batty
+[1m    发疯[22m
+        mad, insane, wild, crazed, deranged, bugs
+
+[4mBUGS[24m
+    [1mBUGS[22m, [1m臭虫[22m
+
+The gzip format represents the input size modulo 2^32, so the --list option reports incor‐
+
+[1mgzip格式表示输入大小模2 ^ 32，因此--list选项会报告incor-[22m
+[1m(Gzip géshì biǎoshì shūrù dàxiǎo mó 2 ^ 32, yīncǐ--list xuǎnxiàng huì bàogào incor-)[22m
+
+Translations of [4mThe gzip format represents the input size modulo 2^32, so the --list option reports incor‐[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mThe gzip format represents the input size modulo 2^32, so the --list option reports incor‐[24m
+    [1mgzip格式表示输入大小模2 ^ 32，因此--list选项会报告incor-[22m, [1m的gzip格式表示输入大小模2 ^ 32，所以--list选项报告incor-[22m
+
+rect uncompressed sizes and compression ratios for uncompressed files 4 GB and larger. To
+
+[1m对未压缩文件大小为4 GB或更大的未压缩大小和压缩比。至[22m
+[1m(Duì wèi yāsuō wénjiàn dàxiǎo wèi 4 GB huò gèng dà de wèi yāsuō dàxiǎo hé yāsuō bǐ. Zhì)[22m
+
+Translations of [4mrect uncompressed sizes and compression ratios for uncompressed files 4 GB and larger. To[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mrect uncompressed sizes and compression ratios for uncompressed files 4 GB and larger.[24m
+    [1m对未压缩文件大小为4 GB或更大的未压缩大小和压缩比。[22m, [1mRECT未压缩尺寸和压缩比为未压缩的文件4 GB和更大。[22m
+[4mTo[24m
+    [1m至[22m, [1m到[22m, [1m于[22m
+
+work around this problem, you can use the following command to  discover  a  large  uncom‐
+
+[1m解决这个问题，你可以使用下面的命令来发现一个大的uncom-[22m
+[1m(Jiějué zhège wèntí, nǐ kěyǐ shǐyòng xiàmiàn de mìnglìng lái fāxiàn yīgè dà de uncom-)[22m
+
+Translations of [4mwork around this problem, you can use the following command to  discover  a  large  uncom‐[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mwork around this problem, you can use the following command to  discover  a  large  uncom‐[24m
+    [1m解决这个问题，你可以使用下面的命令来发现一个大的uncom-[22m, [1m解决此问题，可以使用下面的命令来发现一个大的不同寻常[22m
+
+pressed file's true size:
+
+[1m按下文件的真实大小：[22m
+[1m(Àn xià wénjiàn de zhēnshí dàxiǎo:)[22m
+
+Translations of [4mpressed file's true size:[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mpressed file's true size:[24m
+    [1m按下文件的真实大小：[22m, [1m按下文件的真实尺寸：[22m
+
+zcat file.gz | wc -c
+
+[1mzcat file.gz | wc -c[22m
+[1m(Zcat file.Gz | wc -c)[22m
+
+Translations of [4mzcat file.gz | wc -c[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mzcat file.gz |[24m
+    [1mzcat file.gz |[22m
+[4mwc -c[24m
+    [1mwc -c[22m
+
+The  --list  option reports sizes as -1 and crc as ffffffff if the compressed file is on a
+
+[1m如果压缩文件在a上，--list选项报告大小为-1和crc为ffffffff[22m
+[1m(Rúguǒ yāsuō wénjiàn zài a shàng,--list xuǎnxiàng bàogào dàxiǎo wèi-1 hé crc wèi ffffffff)[22m
+
+Translations of [4mThe  --list  option reports sizes as -1 and crc as ffffffff if the compressed file is on a[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mThe  --list  option reports sizes as -1 and crc as ffffffff if the compressed file is on a[24m
+    [1m如果压缩文件在a上，--list选项报告大小为-1和crc为ffffffff[22m, [1m--list选项报告的大小为-1和CRC作为FFFFFFFF如果压缩文件是在[22m
+
+non seekable media.
+
+[1m非寻找媒体。[22m
+[1m(Fēi xúnzhǎo méitǐ.)[22m
+
+Translations of [4mnon seekable media.[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mnon seekable media.[24m
+    [1m非寻找媒体。[22m, [1m非定位的存储介质。[22m
+
+In some rare cases, the --best option gives worse compression than the default compression
+
+[1m在一些极少数情况下， -  best选项给出比默认压缩更糟的压缩[22m
+[1m(Zài yīxiē jí shǎoshù qíngkuàng xià, -  best xuǎnxiàng gěi chū bǐ mòrèn yāsuō gèng zāo de yāsuō)[22m
+
+Translations of [4mIn some rare cases, the --best option gives worse compression than the default compression[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mIn some rare cases, the --best option gives worse compression than the default compression[24m
+    [1m在一些极少数情况下， -  best选项给出比默认压缩更糟的压缩[22m, [1m在少数情况下， -  best选项得到比默认的压缩压缩恶化[22m
+
+level (-6). On some highly redundant files, compress compresses better than gzip.
+
+[1m级别（-6）。在一些高度冗余的文件上，压缩比gzip压缩更好。[22m
+[1m(Jíbié (-6). Zài yīxiē gāodù rǒng yú de wénjiàn shàng, yāsuō bǐ gzip yāsuō gèng hǎo.)[22m
+
+Translations of [4mlevel (-6). On some highly redundant files, compress compresses better than gzip.[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mlevel (-6).[24m
+    [1m级别（-6）。[22m, [1m电平（-6）。[22m
+[4mOn some highly redundant files, compress compresses better than gzip.[24m
+    [1m在一些高度冗余的文件上，压缩比gzip压缩更好。[22m, [1m在一些高度冗余的文件，压缩压缩比gzip更好。[22m
+
+COPYRIGHT NOTICE
+
+[1m版权声明[22m
+[1m(Bǎnquán shēngmíng)[22m
+
+Translations of [4mCOPYRIGHT NOTICE[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mCOPYRIGHT NOTICE[24m
+    [1m版权声明[22m
+
+Copyright © 1998, 1999, 2001, 2002, 2012 Free Software Foundation, Inc.
+
+[1m版权所有©1998，1999，2001，2002，2012 Free Software Foundation，Inc.[22m
+[1m(Bǎnquán suǒyǒu ©1998,1999,2001,2002,2012 Free Software Foundation,Inc.)[22m
+
+Translations of [4mCopyright © 1998, 1999, 2001, 2002, 2012 Free Software Foundation, Inc.[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mCopyright © 1998, 1999, 2001, 2002, 2012 Free Software Foundation, Inc.[24m
+    [1m版权所有©1998，1999，2001，2002，2012 Free Software Foundation，Inc.[22m, [1m版权所有©1998年，1999年，2001年，2002年，2012自由软件基金会。[22m
+
+Copyright © 1992, 1993 Jean-loup Gailly
+
+[1m版权所有©1992，1993 Jean-loup Gailly[22m
+[1m(Bǎnquán suǒyǒu ©1992,1993 Jean-loup Gailly)[22m
+
+Translations of [4mCopyright © 1992, 1993 Jean-loup Gailly[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mCopyright © 1992, 1993 Jean-loup Gailly[24m
+    [1m版权所有©1992，1993 Jean-loup Gailly[22m, [1m版权所有©1992年，1993年让卢·加伊[22m
+
+Permission  is  granted to make and distribute verbatim copies of this manual provided the
+
+[1m如果允许，允许制作和分发本手册的逐字拷贝[22m
+[1m(Rúguǒ yǔnxǔ, yǔnxǔ zhìzuò hé fēnfā běn shǒucè de zhú zì kǎobèi)[22m
+
+Translations of [4mPermission  is  granted to make and distribute verbatim copies of this manual provided the[24m
+[ [4mEnglish[24m -> [1m简体中文[22m ]
+
+[4mPermission  is  granted to make and distribute verbatim copies of this manual provided the[24m
+    [1m如果允许，允许制作和分发本手册的逐字拷贝[22m, [1m被授权制作和分发逐字复制本手册提供的[22m
+

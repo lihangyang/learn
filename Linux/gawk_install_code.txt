@@ -1,0 +1,8 @@
+url: http://ftp.gnu.org/gnu/gawk
+
+tar zxvf file.tar.gz
+cd dir
+make
+make install
+mv -v /usr/bin/find /bin
+cp -v doc/{awk.txt,*.{eps,pdf,jpg}} /usr/share/doc/gawk-3.1.7
